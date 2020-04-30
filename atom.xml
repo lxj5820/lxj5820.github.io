@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-04-30T08:03:34.628Z</updated>
+    <updated>2020-04-30T08:14:42.612Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -22,82 +22,6 @@
         <content type="html"><![CDATA[<p>接入图灵机器人支持各种生活服务，数字计算，图片搜索，中英翻译，新闻资讯，星座运势，笑话大全，故事大全等多种功能<br>
 <img src="https://lxj5820.github.io/post-images/1588228439166.png" alt="" loading="lazy"></p>
 <!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[【Windows】微信2.9.0.114防撤回多开-附学习笔记]]></title>
-        <id>https://lxj5820.github.io/post/2/</id>
-        <link href="https://lxj5820.github.io/post/2/">
-        </link>
-        <updated>2020-04-30T05:28:40.000Z</updated>
-        <summary type="html"><![CDATA[<p><font color=red><strong>这是我的第一篇内容</strong></font><br>
-本补丁只适用于微信电脑版</p>
-<p>PC微信制作防撤回+多开教程《无视微信版本》【小白级步骤】<br>
-【本教程纯属小小小白级教程，无技术含量，大神勿喷，谢谢】<br>
-（对应防撤回特征码及补丁，以后更新微信版本当前特征码同样可用）<br>
-【2019年发布帖子   2020年4月更新成品补丁    以后本教程也同样有效】</p>
-]]></summary>
-        <content type="html"><![CDATA[<p><font color=red><strong>这是我的第一篇内容</strong></font><br>
-本补丁只适用于微信电脑版</p>
-<p>PC微信制作防撤回+多开教程《无视微信版本》【小白级步骤】<br>
-【本教程纯属小小小白级教程，无技术含量，大神勿喷，谢谢】<br>
-（对应防撤回特征码及补丁，以后更新微信版本当前特征码同样可用）<br>
-【2019年发布帖子   2020年4月更新成品补丁    以后本教程也同样有效】</p>
-<!-- more -->
-<p>特点：<br>
-1、简化操作，只要几步就可以做出补丁了，方法更直接更简单明了。<br>
-2、让想要动手尝试的小小白或者怕别人发布的成品有问题，不放心的，可以自己动手，自己做补丁，这样就更放心了。</p>
-<p>1、关闭电脑杀毒软件，下载OD调试软件<br>
-52专用OD<a href="http://down.52pojie.cn/Tools/Debuggers/%E5%90%BE%E7%88%B1%E7%A0%B4%E8%A7%A3%E4%B8%93%E7%94%A8%E7%89%88Ollydbg.rar">下载链接</a></p>
-<p>2、解压到任意位置，并执行以下操作。<br>
-点击《路径修复》--点击《Udd Cleaner》<br>
-<img src="https://lxj5820.github.io/post-images/1588225068383.jpg" alt="" loading="lazy"></p>
-<p>3、打开《吾爱破解[LCG].exe》进入OD界面，选择左上角的《文件》《打开》选择微信的安装路径：C:\Program Files (x86)\Tencent\WeChat，打开《WeChat.exe》<br>
-<img src="https://lxj5820.github.io/post-images/1588225141523.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225150998.jpg" alt="" loading="lazy"></p>
-<p>4、打开后，点击OD界面左上角的《调试》《运行》然后程序运行后打开了微信的二维码登陆界面，这个界面先放在一边不用管。<br>
-在OD界面的左上角选择《窗口》《Executable modules》<br>
-<img src="https://lxj5820.github.io/post-images/1588225181315.jpg" alt="" loading="lazy"></p>
-<p>5、然后进入Executable modules界面，点击第一行的《路径》进行排序，然后选择《WeChatWin.dll》这个文件，双击进入--回到主线程界面<br>
-<img src="https://lxj5820.github.io/post-images/1588225209584.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225258699.jpg" alt="" loading="lazy"></p>
-<p>6、在上图的任意位置右击《查找》《二进制字串》<br>
-<img src="https://lxj5820.github.io/post-images/1588225288972.jpg" alt="" loading="lazy"></p>
-<p>7、得到如下图后，然后复制特征码：8B068BCEFF501885C00F8431FFFFFF<br>
-在《HEX +00》位置右击粘贴《确定》，<br>
-定位后选择定位下面的第3个JE《********   /74 7B  je short WeChatWi.********》双击它，出现汇编窗口，修改JE为JMP<br>
-再点击《汇编》，然后点击《取消》退出汇编窗口。<br>
-<img src="https://lxj5820.github.io/post-images/1588225317890.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225421516.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225336639.jpg" alt="" loading="lazy"></p>
-<p>8、最后下图位置右击《<font color=red>复制到可执行文件</font>》《<font color=red>所有修改</font>》《<font color=red>全部复制</font>》，进入D界面，然后在D界面右击《<font color=red> 保存文件 </font>》<br>
-<img src="https://lxj5820.github.io/post-images/1588225384275.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225439915.jpg" alt="" loading="lazy"></p>
-<p>9、然后保存为WeChatWin.dll，替换掉微信路径下原来的WeChatWin.dll文件<br>
-防撤回功能就完成了《<font color=red>实际使用上有撤回提示</font>》。<br>
-<img src="https://lxj5820.github.io/post-images/1588225459299.jpg" alt="" loading="lazy"></p>
-<h2 id="二-使用od制作pc微信多开功能">二、使用OD制作PC微信多开功能。</h2>
-<p>前面的1-6的步骤同防撤回一样，就不再重复写了<br>
-<font color=red>第7步</font>、得到如下图后，然后复制特征码：<font color=red>84C0740883CBFF</font><br>
-在《HEX +00》位置右击粘贴《确定》，<br>
-定位后选择<font color=red>定位下面的第一个JE</font>《********   /74 08  je short WeChatWi.********》<font color=red>双击它</font>，出现汇编窗口，<font color=red>修改JE为JMP</font><br>
-再点击《<font color=red>汇编</font>》，然后点击《取消》退出汇编窗口。<br>
-<img src="https://lxj5820.github.io/post-images/1588225735433.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225789004.jpg" alt="" loading="lazy"></p>
-<p>第8、9步骤和防撤回一样，也不再重复了，<br>
-注：防撤回和多开可以一起处理好后一起保存好，这样就同时拥有2个功能了。<br>
-这边分两个是因为分开来讲解。<br>
-↓↓↓↓↓多开效果↓↓↓↓↓<br>
-<img src="https://lxj5820.github.io/post-images/1588225817923.jpg" alt="" loading="lazy"></p>
-<p>三、使用特征码制作PATCH补丁（无视微信版本一直可用，此方法不修改任何文件）<br>
-防撤回原始特征码：8B068BCEFF501885C00F8431FFFFFF<br>
-防撤回修改特征码：8B068BCEFF501885D00F8431FFFFFF（当前代码撤回无提示）<br>
-输入完成后点《添加》《生成补丁》保存名称：1.exe<br>
-使用方法：请先手动打开微信(任意界面均可)，然后等patch工具上显示“已运行”再点击工具上的patch按钮。<br>
-<img src="https://lxj5820.github.io/post-images/1588225852129.png" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225881151.gif" alt="" loading="lazy"></p>
-<p><font color=red>XH 补丁制作工具1.2.5下载（已更新）</font><br>
-https://www.lanzous.com/i778f3a   密码:87q1</p>
 ]]></content>
     </entry>
     <entry>
