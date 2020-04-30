@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-04-30T06:11:29.392Z</updated>
+    <updated>2020-04-30T06:34:27.381Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[右下角的猫]]></title>
+        <id>https://lxj5820.github.io/post/you-xia-jiao-de-mao/</id>
+        <link href="https://lxj5820.github.io/post/you-xia-jiao-de-mao/">
+        </link>
+        <updated>2020-04-30T06:25:11.000Z</updated>
+        <content type="html"><![CDATA[<p>接入图灵机器人支持各种生活服务，数字计算，图片搜索，中英翻译，新闻资讯，星座运势，笑话大全，故事大全等多种功能<br>
+<img src="https://lxj5820.github.io/post-images/1588228439166.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【Windows】微信2.9.0.114防撤回多开-附学习笔记]]></title>
         <id>https://lxj5820.github.io/post/windows-wei-xin-290114-fang-che-hui-duo-kai-fu-xue-xi-bi-ji/</id>
