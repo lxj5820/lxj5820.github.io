@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-04-29T09:03:58.886Z</updated>
+    <updated>2020-04-30T01:18:11.054Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[有一次我开始做网站了]]></title>
+        <id>https://lxj5820.github.io/post/you-yi-ci-wo-kai-shi-zuo-wang-zhan-liao/</id>
+        <link href="https://lxj5820.github.io/post/you-yi-ci-wo-kai-shi-zuo-wang-zhan-liao/">
+        </link>
+        <updated>2020-04-30T00:49:12.000Z</updated>
+        <content type="html"><![CDATA[<p>2020.4.30这是我第三次做网站了，前面每一次都因为各种原因不了了之了很是遗憾！<br>
+<img src="https://lxj5820.github.io/post-images/1588208370697.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://lxj5820.github.io/post/hello-gridea/</id>
