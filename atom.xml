@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-04-30T02:51:43.732Z</updated>
+    <updated>2020-04-30T02:55:37.482Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>记录生活，提升自我</subtitle>
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑的博客</rights>
@@ -16,12 +16,20 @@
         <link href="https://lxj5820.github.io/post/1/">
         </link>
         <updated>2020-04-30T00:49:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>2020.4.30这是我第三次做网站了，前面每一次都因为各种原因不了了之了很是遗憾！<br>
+第一次因为服务器搬家导致无法恢复最后放弃<br>
+第二次因为没钱续费服务器直接烂尾<br>
+这一次我直接不要服务器了<br>
+使用‘GitHub’+‘gridea’建设又新一版的博客<br>
+至此纪念！！！</p>
+]]></summary>
         <content type="html"><![CDATA[<p>2020.4.30这是我第三次做网站了，前面每一次都因为各种原因不了了之了很是遗憾！<br>
 第一次因为服务器搬家导致无法恢复最后放弃<br>
 第二次因为没钱续费服务器直接烂尾<br>
 这一次我直接不要服务器了<br>
 使用‘GitHub’+‘gridea’建设又新一版的博客<br>
-至此纪念</p>
+至此纪念！！！</p>
+<!-- more -->
 ]]></content>
     </entry>
     <entry>
