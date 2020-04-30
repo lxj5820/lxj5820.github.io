@@ -2199,7 +2199,7 @@ body {
     }a {
       cursor: pointer;
     }input, textarea, code {
-      cursor: text;
+      cursor: url('/media/curs/圣剑.cur'), text !important;
     }code > span.copy-code {
       cursor: pointer;
     }.post img {
