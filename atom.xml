@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-05-02T09:43:38.208Z</updated>
+    <updated>2020-05-02T09:46:12.815Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -174,10 +174,12 @@ _   底线
         <link href="https://lxj5820.github.io/post/3/">
         </link>
         <updated>2020-04-30T06:25:11.000Z</updated>
-        <summary type="html"><![CDATA[<p>接入图灵机器人支持各种生活服务，数字计算，图片搜索，中英翻译，新闻资讯，星座运势，笑话大全，故事大全等多种功能<br>
+        <summary type="html"><![CDATA[<p>#仅在电脑网页可显示</p>
+<p>接入图灵机器人支持各种生活服务，数字计算，图片搜索，中英翻译，新闻资讯，星座运势，笑话大全，故事大全等多种功能<br>
 <img src="https://lxj5820.github.io/post-images/1588228439166.png" alt="" loading="lazy"></p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>接入图灵机器人支持各种生活服务，数字计算，图片搜索，中英翻译，新闻资讯，星座运势，笑话大全，故事大全等多种功能<br>
+        <content type="html"><![CDATA[<p>#仅在电脑网页可显示</p>
+<p>接入图灵机器人支持各种生活服务，数字计算，图片搜索，中英翻译，新闻资讯，星座运势，笑话大全，故事大全等多种功能<br>
 <img src="https://lxj5820.github.io/post-images/1588228439166.png" alt="" loading="lazy"></p>
 <!-- more -->
 ]]></content>
