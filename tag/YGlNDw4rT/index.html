@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="记录生活，提升自我">
 <meta name="theme-color" content="#000">
-<title>【Windows】微信2.9.0.114防撤回多开-附学习笔记 | 物理学圣剑的博客</title>
+<title>物理学圣剑的博客</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1588414393788">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -39,8 +39,6 @@
   })();
 </script>
 
-  <meta name="description" content="【Windows】微信2.9.0.114防撤回多开-附学习笔记" />
-  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -166,26 +164,10 @@
   <div class="main-continer">
     
     <div
-      class="section-layout gemini ">
+      class="section-layout  gemini">
       <div class="section-layout-wrapper">
-        
-
-<div class="sidebar">
-  
-    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
-      
-        <div class="post-list-sidebar">
-          <div class="sidebar-title">
-            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
-            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
-          </div>
-        </div>
-      
-      <div class="sidebar-body gemini" id="sidebar_body">
-        
-          
-            <div class="post-side-meta" id="post_side_meta">
-              
+        <div id="sidebarMeta" class="sidebar">
+    
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -237,456 +219,62 @@
 
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number auto"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E4%BA%8C-%E4%BD%BF%E7%94%A8od%E5%88%B6%E4%BD%9Cpc%E5%BE%AE%E4%BF%A1%E5%A4%9A%E5%BC%80%E5%8A%9F%E8%83%BD">二、使用OD制作PC微信多开功能。</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
 </div>
-
 <script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
       }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
     });
   }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
-          
-        
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          学习
+          <small>标签</small>
+        </h2>
       </div>
-    </div>
-  
-</div>
-<script>
-  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
-  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
-  const SLIDE_UP_IN = 'slide-up-in';
-
-  let sidebar = document.querySelector('#sidebar'),
-  tocSideBar = document.querySelector('#tocSideBar'),
-  metaSideBar = document.querySelector('#metaSideBar'),
-  postToc = document.querySelector('#post_toc'),
-  postSiteMeta = document.querySelector('#post_side_meta'),
-  sidebarTitle = document.querySelector('.sidebar-title'),
-  sidebarBody = document.querySelector('#sidebar_body');
-
-  tocSideBar && tocSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  metaSideBar && metaSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  function toggleSidebar(e) {
-    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
-    if (currentTitle == e.srcElement) {
-      return ;
-    }
-    let current, showElement, hideElement;
-    if (e.srcElement == metaSideBar) {
-      showElement = postSiteMeta;
-      hideElement = postToc;
-    } else if (e.srcElement == tocSideBar){
-      showElement = postToc;
-      hideElement = postSiteMeta;
-    }
-    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
-    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
-
-    window.Velocity(hideElement, 'stop');
-    window.Velocity(hideElement, 'transition.slideUpOut', {
-      display: 'none',
-      duration: 200,
-      complete: function () {
-        window.Velocity(showElement, 'transition.slideDownIn', {
-          duration: 200
-        });
-      }
-    })
-    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
-    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
-  }
-
-  postToc && postToc.addEventListener('transitionend', function() {
-    this.classList.remove(SLIDE_UP_IN);
-  });
-
-  if (sidebarBody) {
-    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
-      let hasFix = false;
-      let scrollEl = document.querySelector('.main-continer');
-      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
-      window.addEventListener('scroll', function(e) {
-        if (document.scrollingElement.scrollTop >= limitTop) {
-          if (!hasFix) {
-            sidebar.classList.add('sidebar-fixed');
-            hasFix = true;
-          }
-        } else {
-          if (hasFix) {
-            sidebar.classList.remove('sidebar-fixed');
-            hasFix = false;
-          }
-        }
-      });
-    }
-  }
-  
-</script>
-        <div class="section-box box-shadow-wrapper">
-          <div class="section bg-color post post-page">
-            <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lxj5820.github.io/post/2/">
-      【Windows】微信2.9.0.114防撤回多开-附学习笔记
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-04-30</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>4分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>883<span class="pc-show">字数</span></span>
-    </span>
-    
-    
-    
-    <span id="/post/2/" data-flag-title="【Windows】微信2.9.0.114防撤回多开-附学习笔记" class="meta-item pc-show leancloud_visitors">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-eye"></i>
-      <span>浏览量：<span class="leancloud-visitors-count"></span></span>
-    </span>
-    
-  </div>
-</header>
-            <div class="post-body next-md-body" id="post_body">
-              <p><font color=red><strong>这是我的第一篇内容</strong></font><br>
-本补丁只适用于微信电脑版</p>
-<p>PC微信制作防撤回+多开教程《无视微信版本》【小白级步骤】<br>
-【本教程纯属小小小白级教程，无技术含量，大神勿喷，谢谢】<br>
-（对应防撤回特征码及补丁，以后更新微信版本当前特征码同样可用）<br>
-【2019年发布帖子   2020年4月更新成品补丁    以后本教程也同样有效】</p>
-<!-- more -->
-<p>特点：<br>
-1、简化操作，只要几步就可以做出补丁了，方法更直接更简单明了。<br>
-2、让想要动手尝试的小小白或者怕别人发布的成品有问题，不放心的，可以自己动手，自己做补丁，这样就更放心了。</p>
-<p>1、关闭电脑杀毒软件，下载OD调试软件<br>
-52专用OD<a href="http://down.52pojie.cn/Tools/Debuggers/%E5%90%BE%E7%88%B1%E7%A0%B4%E8%A7%A3%E4%B8%93%E7%94%A8%E7%89%88Ollydbg.rar">下载链接</a></p>
-<p>2、解压到任意位置，并执行以下操作。<br>
-点击《路径修复》--点击《Udd Cleaner》<br>
-<img src="https://lxj5820.github.io/post-images/1588225068383.jpg" alt="" loading="lazy"></p>
-<p>3、打开《吾爱破解[LCG].exe》进入OD界面，选择左上角的《文件》《打开》选择微信的安装路径：C:\Program Files (x86)\Tencent\WeChat，打开《WeChat.exe》<br>
-<img src="https://lxj5820.github.io/post-images/1588225141523.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225150998.jpg" alt="" loading="lazy"></p>
-<p>4、打开后，点击OD界面左上角的《调试》《运行》然后程序运行后打开了微信的二维码登陆界面，这个界面先放在一边不用管。<br>
-在OD界面的左上角选择《窗口》《Executable modules》<br>
-<img src="https://lxj5820.github.io/post-images/1588225181315.jpg" alt="" loading="lazy"></p>
-<p>5、然后进入Executable modules界面，点击第一行的《路径》进行排序，然后选择《WeChatWin.dll》这个文件，双击进入--回到主线程界面<br>
-<img src="https://lxj5820.github.io/post-images/1588225209584.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225258699.jpg" alt="" loading="lazy"></p>
-<p>6、在上图的任意位置右击《查找》《二进制字串》<br>
-<img src="https://lxj5820.github.io/post-images/1588225288972.jpg" alt="" loading="lazy"></p>
-<p>7、得到如下图后，然后复制特征码：8B068BCEFF501885C00F8431FFFFFF<br>
-在《HEX +00》位置右击粘贴《确定》，<br>
-定位后选择定位下面的第3个JE《********   /74 7B  je short WeChatWi.********》双击它，出现汇编窗口，修改JE为JMP<br>
-再点击《汇编》，然后点击《取消》退出汇编窗口。<br>
-<img src="https://lxj5820.github.io/post-images/1588225317890.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225421516.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225336639.jpg" alt="" loading="lazy"></p>
-<p>8、最后下图位置右击《<font color=red>复制到可执行文件</font>》《<font color=red>所有修改</font>》《<font color=red>全部复制</font>》，进入D界面，然后在D界面右击《<font color=red> 保存文件 </font>》<br>
-<img src="https://lxj5820.github.io/post-images/1588225384275.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225439915.jpg" alt="" loading="lazy"></p>
-<p>9、然后保存为WeChatWin.dll，替换掉微信路径下原来的WeChatWin.dll文件<br>
-防撤回功能就完成了《<font color=red>实际使用上有撤回提示</font>》。<br>
-<img src="https://lxj5820.github.io/post-images/1588225459299.jpg" alt="" loading="lazy"></p>
-<h2 id="二-使用od制作pc微信多开功能">二、使用OD制作PC微信多开功能。</h2>
-<p>前面的1-6的步骤同防撤回一样，就不再重复写了<br>
-<font color=red>第7步</font>、得到如下图后，然后复制特征码：<font color=red>84C0740883CBFF</font><br>
-在《HEX +00》位置右击粘贴《确定》，<br>
-定位后选择<font color=red>定位下面的第一个JE</font>《********   /74 08  je short WeChatWi.********》<font color=red>双击它</font>，出现汇编窗口，<font color=red>修改JE为JMP</font><br>
-再点击《<font color=red>汇编</font>》，然后点击《取消》退出汇编窗口。<br>
-<img src="https://lxj5820.github.io/post-images/1588225735433.jpg" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225789004.jpg" alt="" loading="lazy"></p>
-<p>第8、9步骤和防撤回一样，也不再重复了，<br>
-注：防撤回和多开可以一起处理好后一起保存好，这样就同时拥有2个功能了。<br>
-这边分两个是因为分开来讲解。<br>
-↓↓↓↓↓多开效果↓↓↓↓↓<br>
-<img src="https://lxj5820.github.io/post-images/1588225817923.jpg" alt="" loading="lazy"></p>
-<p>三、使用特征码制作PATCH补丁（无视微信版本一直可用，此方法不修改任何文件）<br>
-防撤回原始特征码：8B068BCEFF501885C00F8431FFFFFF<br>
-防撤回修改特征码：8B068BCEFF501885D00F8431FFFFFF（当前代码撤回无提示）<br>
-输入完成后点《添加》《生成补丁》保存名称：1.exe<br>
-使用方法：请先手动打开微信(任意界面均可)，然后等patch工具上显示“已运行”再点击工具上的patch按钮。<br>
-<img src="https://lxj5820.github.io/post-images/1588225852129.png" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1588225881151.gif" alt="" loading="lazy"></p>
-<p><font color=red>XH 补丁制作工具1.2.5下载（已更新）</font><br>
-https://www.lanzous.com/i778f3a   密码:87q1</p>
-
-            </div>
-            <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      物理学圣剑
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://lxj5820.github.io/post/2/" title="【Windows】微信2.9.0.114防撤回多开-附学习笔记">https://lxj5820.github.io/post/2/</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
       
-    </div>
-    <div class="nav-next">
       
-    </div>
-  </div>
-</div>
-            
-  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
-<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
-
-<style>
-  .v .veditor {
-    min-height: 10rem;
-    background-image: url('https://www.easyicon.net/api/resizeApi.php?id=1239495&amp;size=128');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: rgba(255, 255, 255, 0);
-    resize: none;
-  }
-
-  .v .vwrap {
-    border: 1px solid #000 !important;
-  }
-
-  .v .vbtn {
-    padding: .4rem 1.2rem !important;
-    border-color: #fff !important;
-    background-color: #49b1f5 !important;
-    color: #fff !important;
-    font-size: .7rem !important;
-  }
-
-  .v .vcards .vcard .vh .vmeta .vat {
-    padding: 0 .8rem !important;
-    border: 1px solid #00c4b6 !important;
-    border-radius: 5px !important;
-    color: #00c4b6 !important;
-  }
-</style>
-<script>
-  new Valine({
-    el: '#vcomments',
-    appId: 'FEsIjAGYwt0s91ih36axJN0V-gzGzoHsz',
-    appKey: 'Ug8QtB6rTLaPRRg2GS84TtIW',
-    avatar: 'robohash',
-    placeholder: '这里可以评论哦！',
-    pageSize: '',
-    lang: 'zh-cn',
-    visitor: 'true' === 'true',
-    highlight: 'true' === 'true',
-    avatarForce: 'true' === 'false',
-  });
-</script>
-
+      
+      <a href="https://lxj5820.github.io/post/guan-yu-xue-xi-markdown-xie-zuo/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              05-02
+              <small>关于学习Markdown写作</small>
+            </h1>
           </div>
+        </div>
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+          </section>
         </div>
       </div>
     </div>
@@ -1397,36 +985,6 @@ https://www.lanzous.com/i778f3a   密码:87q1</p>
   hljs.initHighlightingOnLoad();
 
 </script>
-    <div class="light-box" id="light_box"></div>
-<script>
-  let imgs = document.querySelectorAll('.post-body img');
-  let lightBox = document.querySelector('#light_box');
-  lightBox.addEventListener('mousedown', (e) => {
-    e.preventDefault()
-  })
-  lightBox.addEventListener('mousewheel', (e) => {
-    e.preventDefault()
-  })
-  let width = window.innerWidth * 0.8;
-  lightBox.onclick = () => {
-    let img = lightBox.querySelector('img');
-    lightBox.style = '';
-    img && img.remove();
-  }
-  imgs.forEach(item => {
-    item.onclick = function (e) {
-      let lightImg = document.createElement('img');
-      lightImg.src = this.src;
-      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
-      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
-      lightImg.onclick = function () {
-        lightBox.style = '';
-        this.remove();
-      }
-      lightBox.append(lightImg);
-    }
-  })
-</script>
   </div>
 </body>
 <input hidden id="copy" />
@@ -1831,5 +1389,6 @@ https://www.lanzous.com/i778f3a   密码:87q1&lt;/p&gt;
 
 
 <script src=" /media/js/cool.js"></script>
+
 
 </html>
