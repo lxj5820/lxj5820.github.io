@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-05-02T10:13:23.087Z</updated>
+    <updated>2020-05-03T07:54:52.800Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[如何在电脑端同时开启多个微信]]></title>
+        <id>https://lxj5820.github.io/post/ru-he-zai-dian-nao-duan-tong-shi-kai-qi-duo-ge-wei-xin/</id>
+        <link href="https://lxj5820.github.io/post/ru-he-zai-dian-nao-duan-tong-shi-kai-qi-duo-ge-wei-xin/">
+        </link>
+        <updated>2020-05-03T07:44:39.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="01">01.</h2>
+<p>在Windows 10 系统中，可以下载windows 客户端的同时，在微软应用商城下载另一个版本的独立应用<br>
+<img src="https://cdn.labs.topbook.cc/topbook/img/e5e5c26fcd441128f00acf6311a12f608" alt="" loading="lazy"></p>
+<h2 id="02">02.</h2>
+<ol>
+<li>
+<p>新建一个记事本</p>
+</li>
+<li>
+<p>在其中输入<code>start &quot;程序地址&quot;</code>（注意引号为英文状态，且前后有空格）</p>
+<p>然后想开几个微信就复制几次<br>
+<img src="https://cdn.labs.topbook.cc/topbook/img/e4d59f89e66b50fd2b880d79235f057d2" alt="" loading="lazy"></p>
+</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于学习Markdown写作]]></title>
         <id>https://lxj5820.github.io/post/guan-yu-xue-xi-markdown-xie-zuo/</id>
