@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-05-15T02:21:56.152Z</updated>
+    <updated>2020-05-15T06:55:11.453Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[001]]></title>
+        <id>https://lxj5820.github.io/post/001/</id>
+        <link href="https://lxj5820.github.io/post/001/">
+        </link>
+        <updated>2020-05-15T06:53:38.000Z</updated>
+        <content type="html"><![CDATA[<video id="video" controls="" preload="none" poster="C:\Users\Administrator\OneDrive\Gridea\post-images\32669bc2f489c856ee21884db336b97.png">
+      <source id="mp4" src="C:\Users\Administrator\OneDrive\Gridea\post-images\_2020_05_15_14_48_28_782.mp4">
+      </video>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[设计作品]]></title>
         <id>https://lxj5820.github.io/post/she-ji-zuo-pin/</id>
