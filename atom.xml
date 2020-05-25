@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑的博客</title>
-    <updated>2020-05-25T05:58:59.991Z</updated>
+    <updated>2020-05-25T06:24:16.222Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -11,72 +11,11 @@
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑的博客</rights>
     <entry>
-        <title type="html"><![CDATA[office办公服务]]></title>
-        <id>https://lxj5820.github.io/post/office-ban-gong-fu-wu/</id>
-        <link href="https://lxj5820.github.io/post/office-ban-gong-fu-wu/">
+        <title type="html"><![CDATA[关于学习Markdown写作(更新)]]></title>
+        <id>https://lxj5820.github.io/post/003/</id>
+        <link href="https://lxj5820.github.io/post/003/">
         </link>
-        <updated>2020-05-25T05:33:05.000Z</updated>
-        <summary type="html"><![CDATA[<center><font face="黑体" size=6>一切跟OFFICE有关的我们都可以代劳</font></center>
-<center><font  color=red size=5>Office专业团队  资料决定保密  一对一服务</font> </center>
-]]></summary>
-        <content type="html"><![CDATA[<center><font face="黑体" size=6>一切跟OFFICE有关的我们都可以代劳</font></center>
-<center><font  color=red size=5>Office专业团队  资料决定保密  一对一服务</font> </center>
-<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1590385462259.png" alt="" loading="lazy"></figure>
-<h2 id="联系方式qq2158346084-暗号5820">联系方式：QQ：2158346084  暗号:5820</h2>
-<h2 id="微信17608072609">微信：17608072609</h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[设计作品]]></title>
-        <id>https://lxj5820.github.io/post/she-ji-zuo-pin/</id>
-        <link href="https://lxj5820.github.io/post/she-ji-zuo-pin/">
-        </link>
-        <updated>2020-05-15T01:44:27.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="效果">【效果】</h2>
-<p><img src="https://lxj5820.github.io/post-images/1589507122048.png" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1589507133566.png" alt="" loading="lazy"><br>
-<video id="video" controls="" preload="none" poster="C:\Users\Administrator\OneDrive\Gridea\post-images\910e568a49983321c27d141ae5e52d6.png"><br>
-<source id="mp4" src="C:\Users\Administrator\OneDrive\Gridea\post-images\Av98608660,P1.mp4"><br>
-</video></p>
-<h2 id="平面">【平面】</h2>
-<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/%E5%9B%9B%E5%90%88%E9%99%A22018.11.22-01.jpg" alt="" loading="lazy"></figure>
-<h2 id="结构">【结构】</h2>
-<figure data-type="image" tabindex="2"><img src="https://lxj5820.github.io/post-images/jiegou.png" alt="" loading="lazy"></figure>
-<h2 id="实例">【实例】</h2>
-<video id="video" controls="" preload="none" poster="C:\Users\Administrator\OneDrive\Gridea\post-images\6602156fbe19d624d322774da4189af.jpg">
-      <source id="mp4" src="C:\Users\Administrator\OneDrive\Gridea\post-images\28d36c19a1efe3a132d4401e946ced48.mp4">
-      </video>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何在电脑端同时开启多个微信]]></title>
-        <id>https://lxj5820.github.io/post/ru-he-zai-dian-nao-duan-tong-shi-kai-qi-duo-ge-wei-xin/</id>
-        <link href="https://lxj5820.github.io/post/ru-he-zai-dian-nao-duan-tong-shi-kai-qi-duo-ge-wei-xin/">
-        </link>
-        <updated>2020-05-03T07:44:39.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="01">01.</h2>
-<p>在Windows 10 系统中，可以下载windows 客户端的同时，在微软应用商城下载另一个版本的独立应用<br>
-<img src="https://cdn.labs.topbook.cc/topbook/img/e5e5c26fcd441128f00acf6311a12f608" alt="" loading="lazy"></p>
-<h2 id="02">02.</h2>
-<ol>
-<li>
-<p>新建一个记事本</p>
-</li>
-<li>
-<p>在其中输入<code>start &quot;程序地址&quot;</code>（注意引号为英文状态，且前后有空格）</p>
-<p>然后想开几个微信就复制几次<br>
-<img src="https://cdn.labs.topbook.cc/topbook/img/e4d59f89e66b50fd2b880d79235f057d2" alt="" loading="lazy"></p>
-</li>
-</ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于学习Markdown写作]]></title>
-        <id>https://lxj5820.github.io/post/guan-yu-xue-xi-markdown-xie-zuo/</id>
-        <link href="https://lxj5820.github.io/post/guan-yu-xue-xi-markdown-xie-zuo/">
-        </link>
-        <updated>2020-05-02T09:24:30.000Z</updated>
+        <updated>2020-05-25T09:24:30.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="认识markdow">认识Markdow</h3>
 <p>Markdown 是一种「标记语言」，通过简单的标记语法，使普通文本内容具有一定的格式。它最大的三个优点是：轻量、简单、通用，当前已经有很多人用它来写博客、写书甚至是写论文。</p>
 ]]></summary>
@@ -229,8 +168,74 @@ _   底线
 <p>使用Markdown的同学最郁闷的地方恐怕就是不能给文字添加颜色了。事实上，Markdown的最初目标就是为纯写作而生的。因此，它并没有考虑文字颜色这一点。所以，单纯使用Markdown设置文字颜色已经做不到了。但你可以这样做：</p>
 <p>先用Markdown编辑完成<br>
 导出为html，在需要上色的部分手动添加标签<code>&lt;font color='#ff0000'&gt;内容&lt;/font&gt;</code>保存即可。</p>
+<h3 id="文字居中">文字居中</h3>
+<p>在Markdown中有时会需要让文字在页面中居中只需要</p>
+<pre><code> &lt;center&gt;这段文字需要居中&lt;/center&gt; 
+</code></pre>
+  <center>这段文字需要居中</center> 
 <h2 id="简单总结">简单总结</h2>
 <p>Markdown是一门比html更简单的标记语言，其主要用于日常写作。最终通过相应的编辑器或者脚本转换成html用于页面渲染。如果你是一个作家，或者是一个程序员，Markdown对你来说是一门必备的技能。掌握Markdown真的很简单，如你所见，这篇文章使用了这么短的篇幅就已经将Markdown的语法全部介绍完了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[office办公服务]]></title>
+        <id>https://lxj5820.github.io/post/office-ban-gong-fu-wu/</id>
+        <link href="https://lxj5820.github.io/post/office-ban-gong-fu-wu/">
+        </link>
+        <updated>2020-05-25T05:33:05.000Z</updated>
+        <summary type="html"><![CDATA[<center><font face="黑体" size=6>一切跟OFFICE有关的我们都可以代劳</font></center>
+<center><font  color=red size=5>Office专业团队  资料决定保密  一对一服务</font> </center>
+]]></summary>
+        <content type="html"><![CDATA[<center><font face="黑体" size=6>一切跟OFFICE有关的我们都可以代劳</font></center>
+<center><font  color=red size=5>Office专业团队  资料决定保密  一对一服务</font> </center>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1590385462259.png" alt="" loading="lazy"></figure>
+<h2 id="联系方式qq2158346084-暗号5820">联系方式：QQ：2158346084  暗号:5820</h2>
+<h2 id="微信17608072609">微信：17608072609</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[设计作品]]></title>
+        <id>https://lxj5820.github.io/post/she-ji-zuo-pin/</id>
+        <link href="https://lxj5820.github.io/post/she-ji-zuo-pin/">
+        </link>
+        <updated>2020-05-15T01:44:27.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="效果">【效果】</h2>
+<p><img src="https://lxj5820.github.io/post-images/1589507122048.png" alt="" loading="lazy"><br>
+<img src="https://lxj5820.github.io/post-images/1589507133566.png" alt="" loading="lazy"><br>
+<video id="video" controls="" preload="none" poster="C:\Users\Administrator\OneDrive\Gridea\post-images\910e568a49983321c27d141ae5e52d6.png"><br>
+<source id="mp4" src="C:\Users\Administrator\OneDrive\Gridea\post-images\Av98608660,P1.mp4"><br>
+</video></p>
+<h2 id="平面">【平面】</h2>
+<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/%E5%9B%9B%E5%90%88%E9%99%A22018.11.22-01.jpg" alt="" loading="lazy"></figure>
+<h2 id="结构">【结构】</h2>
+<figure data-type="image" tabindex="2"><img src="https://lxj5820.github.io/post-images/jiegou.png" alt="" loading="lazy"></figure>
+<h2 id="实例">【实例】</h2>
+<video id="video" controls="" preload="none" poster="C:\Users\Administrator\OneDrive\Gridea\post-images\6602156fbe19d624d322774da4189af.jpg">
+      <source id="mp4" src="C:\Users\Administrator\OneDrive\Gridea\post-images\28d36c19a1efe3a132d4401e946ced48.mp4">
+      </video>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何在电脑端同时开启多个微信]]></title>
+        <id>https://lxj5820.github.io/post/ru-he-zai-dian-nao-duan-tong-shi-kai-qi-duo-ge-wei-xin/</id>
+        <link href="https://lxj5820.github.io/post/ru-he-zai-dian-nao-duan-tong-shi-kai-qi-duo-ge-wei-xin/">
+        </link>
+        <updated>2020-05-03T07:44:39.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="01">01.</h2>
+<p>在Windows 10 系统中，可以下载windows 客户端的同时，在微软应用商城下载另一个版本的独立应用<br>
+<img src="https://cdn.labs.topbook.cc/topbook/img/e5e5c26fcd441128f00acf6311a12f608" alt="" loading="lazy"></p>
+<h2 id="02">02.</h2>
+<ol>
+<li>
+<p>新建一个记事本</p>
+</li>
+<li>
+<p>在其中输入<code>start &quot;程序地址&quot;</code>（注意引号为英文状态，且前后有空格）</p>
+<p>然后想开几个微信就复制几次<br>
+<img src="https://cdn.labs.topbook.cc/topbook/img/e4d59f89e66b50fd2b880d79235f057d2" alt="" loading="lazy"></p>
+</li>
+</ol>
 ]]></content>
     </entry>
     <entry>
