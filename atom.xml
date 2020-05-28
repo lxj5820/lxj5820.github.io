@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-05-28T08:00:01.516Z</updated>
+    <updated>2020-05-28T09:42:24.065Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑</rights>
+    <entry>
+        <title type="html"><![CDATA[【windows】QQ3.3.3防撤回微信2.9.123防撤回_多开]]></title>
+        <id>https://lxj5820.github.io/post/0MGd0kMe1/</id>
+        <link href="https://lxj5820.github.io/post/0MGd0kMe1/">
+        </link>
+        <updated>2020-05-28T09:36:32.000Z</updated>
+        <summary type="html"><![CDATA[<p>更新微信2.9.0.123版正式版（带撤回提示、多开）<a href="https://winim.lanzous.com/icj8bwh">🌏点击下载</a><br>
+更新QQ3.3.3（27009）正式版防撤回 <a href="https://winim.lanzous.com/id1fivi">🌏点击下载</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>更新微信2.9.0.123版正式版（带撤回提示、多开）<a href="https://winim.lanzous.com/icj8bwh">🌏点击下载</a><br>
+更新QQ3.3.3（27009）正式版防撤回 <a href="https://winim.lanzous.com/id1fivi">🌏点击下载</a></p>
+<!-- more -->
+<p>注：有些朋友替换出现无法登陆现象请注意自己的版本是否与描述的不同！请更新到最新版本在使用！    还有些不知道怎么使用的，直接在桌面找到需要替换的文件:如（QQ）右键打开文件所在位置直接复制下载好的IM到文件夹右键粘贴 替换就搞定！！</p>
+<p>关于封号：本补丁改动极少极少并没有hook任何附加。只是防撤回消息，太害怕的 大可不必使用。     并且楼主一直使用者，毫无问题，我也不能保证100%不封，至少我用了这么久是没问题的！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[自我的提——学习网站]]></title>
         <id>https://lxj5820.github.io/post/MsHehdzVa/</id>
