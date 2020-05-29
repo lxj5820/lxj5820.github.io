@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-05-29T02:34:18.787Z</updated>
+    <updated>2020-05-29T08:14:25.400Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,279 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑</rights>
+    <entry>
+        <title type="html"><![CDATA[用Excel做数据分析]]></title>
+        <id>https://lxj5820.github.io/post/FfSZoRVfw/</id>
+        <link href="https://lxj5820.github.io/post/FfSZoRVfw/">
+        </link>
+        <updated>2020-05-29T08:11:12.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>数据分析是什么？</strong><br>
+把隐藏在一大批看似杂乱无章的数据背后的信息集中和提炼出来，总结出研究对象的内在规律。帮助管理者进行判断和决策，以便采取适当的策略和行动。<br>
+<strong>分类：</strong><br>
+描述性数据分析（初级数据分析 常见分析方法：对比分析法、平均分析法、交叉分析法）<br>
+探索性数据分析：高级数据分析，侧重于在数据之中发现新的特征<br>
+验证性数据分析：高级数据分析，高级数据分析，侧重于验证已有假设的真伪性</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>数据分析是什么？</strong><br>
+把隐藏在一大批看似杂乱无章的数据背后的信息集中和提炼出来，总结出研究对象的内在规律。帮助管理者进行判断和决策，以便采取适当的策略和行动。<br>
+<strong>分类：</strong><br>
+描述性数据分析（初级数据分析 常见分析方法：对比分析法、平均分析法、交叉分析法）<br>
+探索性数据分析：高级数据分析，侧重于在数据之中发现新的特征<br>
+验证性数据分析：高级数据分析，高级数据分析，侧重于验证已有假设的真伪性</p>
+<!-- more -->
+<h4 id="数据分析5个阶段">数据分析5个阶段</h4>
+<ul>
+<li>
+<p>数据收集<br>
+第一手数据：主要指可直接获取的数据;第二手数据：指经过加工整理后得到的数据</p>
+</li>
+<li>
+<p>数据处理<br>
+目的：从大量的、杂乱无章、难以理解的数据中抽取并推导出对解决问题有价值、有意义的数据</p>
+</li>
+<li>
+<p>数据分析<br>
+数据挖掘：一种高级的数据分析方法。主要侧重解决四类数据分析问题：分类、聚类、关联、预测</p>
+</li>
+<li>
+<p>数据展现<br>
+常用数据图：饼图、柱形图、条形图、折线图、散点图、雷达图、金字塔图、矩阵图、漏斗图、帕雷托图</p>
+</li>
+<li>
+<p>报告撰写<br>
+有一个好的分析框架，并且图文并茂，层次明晰，能够让阅读者一目了然，需要有明确的结论，有建议或解决方案</p>
+</li>
+</ul>
+<p>而本题讲的主要是excel作为工具进行数据分析。其他的SPSS Statistics等暂且不提。</p>
+<h4 id="1-数据收集阶段">1、数据收集阶段：</h4>
+<p>这个阶段可以参考这个问题：<a href="http://www.zhihu.com/question/20033475">国内外有哪些比较权威的统计数据网站？ - 互联网</a>，各知友都很热心。</p>
+<h4 id="2-数据处理阶段">2、数据处理阶段：</h4>
+<p>这个时候要用到excel了。首先要对数据进行一次大清洗！将多余重复的数据筛选清除，将缺失数据补充完整，将错误数据纠正或删除。</p>
+<p>这个时候要用到一系列函数：</p>
+<p>数据重复【（COUNTIF函数），删除重复项】</p>
+<p>缺失数据【IF And Or 嵌套函数等】</p>
+<p>数据抽样【Left，Right，CONCATENATE(文本1，文本2....)，VLOOKUP】</p>
+<p>数据计算【AVERAGE、SUM、MAX、MIN，Date，If】</p>
+<p>数据分组【VLOOKUP函数，采用近似匹配，SEARCH函数】</p>
+<p>数据抽样【RAND函数，RAND()】</p>
+<p>以上只是一些简单的说明，具体问题需要根据需求进行分析。</p>
+<h4 id="3-数据分析阶段">3、数据分析阶段：</h4>
+<figure data-type="image" tabindex="1"><img src="https://pic3.zhimg.com/80/a8c36a963ca510cbfe458c43f76489af_720w.jpg" alt="" loading="lazy"></figure>
+<h5 id="对比分析法">对比分析法：</h5>
+<p>常见的如完成值与目标值的差距，这个月与上个月的对比，同公司间各部门的对比，竞争对手行业内对比，这里要注意的是计算范围计算方法要一致，对象要一致，指标类型要一致。</p>
+<p>分组分析法：<a href="https://link.zhihu.com/?target=http%3A//blog.sina.com.cn/s/blog_49f78a4b0100ju4u.html">如何用EXCEL进行数据分组</a></p>
+<h5 id="结构分析法">结构分析法：</h5>
+<pre><code>结构相对指标（比例）的计算公式为：
+</code></pre>
+<center> **结构相对指标（比例）=（总体某部分的数值/总体总量）x100%**</center>
+<p>结构分析法的优点是简单实用，在实际的企业运营分析中，市场占有率就是一个非常典型的应用。</p>
+<center>**市场占有率=（某种商品销售量/该中商品市场销售总量）x100%**</center>
+<h5 id="平均分析法">平均分析法：</h5>
+<pre><code>算数平均数的计算公式为：
+</code></pre>
+<center>**算数平均数=总体各单位数值的总和/总体单位个数**</center>
+<p>算术平均数是非常重要的基础性指标。平均数是综合指标，它的特点是将总体内各单位的数量差异抽象化，它能代表总体的一般水平，掩盖了在平均数后各单位的差异。<br>
+平均分析法要结合各种分组和指标对比来进行。比如分析不同行业、地区的平均从业人数、平均营业收入等。总之，对于所有数量指标都可以依据不同的分组用单位数来平均，进行对比与分析。</p>
+<h5 id="交叉分析法">交叉分析法：</h5>
+<p>交叉分析法通常用于分析两个变量（字段）之间的关系,即同时将两个有一定联系的变量及其值交叉排列在一张表格内,使各变量值成为不同变量的交叉结点,形成交叉表,从而分析交叉表中变量之间的关系,所以也叫交叉表分析法。交叉表当然也有二维以上的,维度越多,交叉表就越复杂,所以在选择几个维度的时候需要根据分析的目的决定。下面我主要介绍二维交叉表分析法。</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//www.wordlm.com/Excel/2013/3952.html">利用Excel2013数据透视图功能，将一维表转为二维表_Word联盟</a></p>
+<h5 id="综合评价分析方法">综合评价分析方法：</h5>
+<figure data-type="image" tabindex="2"><img src="https://pic1.zhimg.com/a50b75e7b864036a05657b61fc6f91b6_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="杜邦分析法">杜邦分析法：</h5>
+<p>杜邦分析法利用各个主要财务比率之间的内在联系，建立财务比率分析的综合模型，来综合地分析和评价企业财务状况和经营业绩的方法。采用杜邦分析图将有关分析指标按内在联系加以排列，从而直观地反映出企业的财务状况和经营成果的总体面貌。</p>
+<figure data-type="image" tabindex="3"><img src="https://pic2.zhimg.com/fdb363d5fe64fb4d7d51efa7c71077ee_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="漏斗图分析法">漏斗图分析法：</h5>
+<p>漏斗图不仅能够提供用户在业务中的转化率和流失率，还揭示了各种业务在网站中受欢迎的程度。虽然单一漏斗图无法评价网站某个关键流程中各步骤转化率的好坏，但是通过前后对比或是不同业务、不同客户群的漏斗图对比，还是能够发现网站中存在的问题。</p>
+<figure data-type="image" tabindex="4"><img src="https://pic2.zhimg.com/ab46e42b328b5184a809b169e8af795a_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="矩阵关联分析法">矩阵关联分析法：</h5>
+<p>关联矩阵法是常用的系统综合评价法，它主要是用矩阵形式来表示每个替代方案有关评价指标及其重要度和方案关于具体指标的价值评定量之间的关系。</p>
+<figure data-type="image" tabindex="5"><img src="https://pic3.zhimg.com/80/6b62fd7043a4d5f2711426de4bcf3b05_720w.jpg" alt="" loading="lazy"></figure>
+<h5 id="其他高级分析法">其他高级分析法：</h5>
+<figure data-type="image" tabindex="6"><img src="https://pic3.zhimg.com/329a5857cbfcd22c0d0269d95661c4b4_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="数据透视表">数据透视表：</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">术语</th>
+<th style="text-align:center">内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">轴</td>
+<td style="text-align:center">数据透视表中的一个维度，例如行、列或页</td>
+</tr>
+<tr>
+<td style="text-align:center">数据源</td>
+<td style="text-align:center">创建数据透视表的数据表、数据库等</td>
+</tr>
+<tr>
+<td style="text-align:center">字段</td>
+<td style="text-align:center">数据信息的种类，相当于数据表中的列</td>
+</tr>
+<tr>
+<td style="text-align:center">字段标题</td>
+<td style="text-align:center">描述字段内容的标志，可通过拖动字段标题对数据透视表进行透视分析</td>
+</tr>
+<tr>
+<td style="text-align:center">透视</td>
+<td style="text-align:center">通过改变一个或多个字段的位置来重新安排数据透视表</td>
+</tr>
+<tr>
+<td style="text-align:center">汇总函数</td>
+<td style="text-align:center">Excel用来计算表格中数据值的函数。数值和文本的默认汇总函数分别是求和与计数</td>
+</tr>
+<tr>
+<td style="text-align:center">刷新</td>
+<td style="text-align:center">重新计算数据透视表，以反映目前数据源状态</td>
+</tr>
+</tbody>
+</table>
+<p>这也是一个大块，需要深入的学习，有机会也会写个简单的答案。</p>
+<h4 id="4-数据展现">4、数据展现：</h4>
+<p>根据数据关系选择图表</p>
+<p>这部分在另一个答案里有详解的讲解对于没种类型的图表有详解的演示和说明：</p>
+<p>如何制作图表非常精美的 Excel 文档？ - 忽如远行客的回答</p>
+<p>成分：饼图、柱形图、条形图、瀑布图</p>
+<p>排序：柱形图、条形图、气泡图、帕累托图</p>
+<p>时间序列：折线图、柱形图</p>
+<p>相关性：散点图、柱形图、对称条形图(旋风图)、散点图、气泡图</p>
+<p>多重数据比较：雷达图</p>
+<p>图表注意事项</p>
+<ul>
+<li>信息完整：图表标题、单位、图例、脚注、来源等</li>
+<li>避免无意义的图表</li>
+<li>一表反映一个观点</li>
+<li>只选对的不选复杂的图表</li>
+<li>标题一句话阐述清楚反映观点</li>
+</ul>
+<h4 id="5-报告撰写">5、报告撰写</h4>
+<p>数据分析报告的作用：展示分析结果 验证分析质量 提供决策依据</p>
+<p><strong>报告类型：</strong></p>
+<ul>
+<li>
+<p>专题分析报告<br>
+定义：对社会经济现象的某一方面或某一问题进行专门研究的一种数据分析报告<br>
+作用：为决策者制定某项政策、解决某个问题提供决策参考和依据<br>
+特点：内容的单一性 分析的深入性</p>
+</li>
+<li>
+<p>综合分析报告<br>
+定义：全面评价一个地区、单位、部门业务或其他方面发展情况的一种数据分析报告<br>
+特点：全面性 联系性</p>
+</li>
+<li>
+<p>日常数据通报<br>
+定义：以定期数据分析报表为依据，反映计划的执行情况，并分析其影响和形成原因的一种数据分析报告<br>
+特点：进度性 规范性 时效性</p>
+</li>
+</ul>
+<p><strong>数据分析报告结构：</strong></p>
+<p>标题页<br>
+标题类型：解析基本观点 概括主要内容 交代分析主题 提出问题<br>
+标题要求：直接 确切 简洁<br>
+前言<br>
+分析背景：为何开展此次分析？有何意义？<br>
+分析目的：通过此次分析要解决什么问题？达到何种目的？<br>
+分析思路：如何开展此次分析？主要通过哪几方面开展？<br>
+正文</p>
+<p>是报告最长的主体部分，包含所有数据分析事实和观点，通过数据图表和相关的文字结合分析，正文各部分具有逻辑关系<br>
+结论和建议</p>
+<p>以上是一般的数据分析的方法和一些注意事项，事无巨细，数据分析本身就是一个慢活细活，脑力活，透过庞大的数据看本质是一个数据分析人员最应该掌握的东西。</p>
+<p>接下来才是真正的核心：（工具篇）</p>
+<figure data-type="image" tabindex="7"><img src="https://pic2.zhimg.com/a08a129573bd72502908d84aa27eb6a7_r.jpg" alt="图转，侵删" loading="lazy"></figure>
+<p>当面对海量数据时，我们就应该掌握一些工具因为这才是一个数据分析人员真正要面对的。</p>
+<p>SQL语句：<a href="https://link.zhihu.com/?target=http%3A//wenku.baidu.com/link%3Furl%3D3FNp1xP9WbF6nUOkZ5pdhPCdlWRhe4m1JQwUG9ydKs4o7glugIrsPhGG_24euaZq26UZlhwRp7n8KMLy6TGI0y7PrnvBB0YMgQGSPfEP-g7">Excel2010 常用SQL语句解释</a></p>
+<p>Microsoft Query:实现数据导入/数据处理/数据分析：</p>
+<p>微软的官方使用文档：<a href="https://support.microsoft.com/zh-cn/help/136699/description-of-the-usage-of-joins-in-microsoft-query">https://support.microsoft.com/zh-cn/kb/136699</a></p>
+<p>PowerPivot： 简单数据分析/多表关联分析/字段计算分析/数据分组分析具体参考官方说明文档：<a href="https://link.zhihu.com/?target=https%3A//support.office.com/zh-cn/article/PowerPivot-%25E5%258A%25A0%25E8%25BD%25BD%25E9%25A1%25B9-a9c2c6e2-cc49-4976-a7d7-40896795d045">PowerPivot 加载项</a></p>
+<p>工具库：描述性统计分析 / 直方图 / 抽样分析 /相关分析 /回归分析 /移动平均 / 指数平滑 / 这个教程不错：<a href="https://link.zhihu.com/?target=http%3A//vdisk.weibo.com/s/wAj2101Wio9">excel数据分析教程.pdf</a></p>
+<p>水晶易表：<a href="https://link.zhihu.com/?target=http%3A//wenku.baidu.com/link%3Furl%3DZNZVYQb6OIoHsXBsDWm-ccbmVsedhE7AqdvplBXlQIP0lL01Oh7wEBqKlNeFZZIY50gSYzjSE5GwFnnMj9xZvBhqUtHpBsnVP4tQG2SA3ue">水晶易表完全教程(完全版)_百度文库</a></p>
+<p>VBA：那就是另外一个世界了。</p>
+<p>最后推荐数据分析的十个博客：</p>
+<p>数据分析十大博客</p>
+<p>沈浩老师的博客：<a href="https://link.zhihu.com/?target=http%3A//shenhaolaoshi.blog.sohu.com/">沈浩老师的博客</a><br>
+数据挖掘与数据分析：<a href="https://link.zhihu.com/?target=http%3A//spss-market.r.blog.163.com/">http://spss-market.r.blog.163.com/</a><br>
+数据挖掘@数据分析 <a href="https://link.zhihu.com/?target=http%3A//blog.sina.com.cn/u/1606645093">郑来轶_新浪博客</a><br>
+数据化管理：<a href="https://link.zhihu.com/?target=http%3A//chemyhuang.blog.163.com/">http://chemyhuang.blog.163.com/</a><br>
+数据元素：<a href="https://link.zhihu.com/?target=http%3A//blog.sina.com.cn/greatdoor">Wayne_新浪博客</a></p>
+<p>小蚊子乐园：<a href="https://link.zhihu.com/?target=http%3A//blog.sina.com.cn/xiaowenzi22">小蚊子数据分析</a></p>
+<p>ExcelPro的图表博客：<a href="https://link.zhihu.com/?target=http%3A//excelpro.blog.sohu.com/">ExcelPro的图表博客</a></p>
+<p>网站分析在中国——从基础到前沿(<a href="https://link.zhihu.com/?target=http%3A//www.chinawebanalytics.cn">网站分析在中国——从基础到前沿 |</a>)</p>
+<p>网站数据分析：<a href="https://link.zhihu.com/?target=http%3A//webdataanalysis.net/">网站数据分析</a></p>
+<p>蓝鲸的网站分析笔记：<a href="https://link.zhihu.com/?target=http%3A//bluewhale.cc/">蓝鲸的网站分析笔记</a></p>
+<p>除了上边的那个知乎上的收集信息的帖子，再加上这个：<a href="https://link.zhihu.com/?target=http%3A//bbs.pinggu.org/thread-1095980-1-1.html">哪些数据网站和资料最常用，最好用？</a></p>
+<p>不过我是做互联网的，移动互联网数据来源：</p>
+<ul>
+<li>百度指数</li>
+<li>淘宝指数</li>
+<li>艾瑞咨询</li>
+<li>易观智库</li>
+<li>CNNIC</li>
+<li>比达咨询</li>
+<li>新浪微博：什么时候开始，发布频次，内容特色。粉丝数。</li>
+<li>微信官号：什么时候开始，发布频次，内容特色。粉丝数。</li>
+<li>百度搜索前10页，其他渠道覆盖。</li>
+<li>线上调研</li>
+</ul>
+<p>推荐这本书：<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/25863807/">Excel 2010数据处理与分析实战技巧精粹 (豆瓣)</a></p>
+<p>推荐：<a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/24715620/">谁说菜鸟不会数据分析 (豆瓣)</a></p>
+<p>本文资料来源：</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/20373356/">谁说菜鸟不会数据分析 (豆瓣)</a></p>
+<p><a href="https://link.zhihu.com/?target=http%3A//book.douban.com/subject/24715620/">谁说菜鸟不会数据分析 (豆瓣)</a></p>
+<p><a href="https://link.zhihu.com/?target=http%3A//wiki.mbalib.com/wiki/%25E5%2585%25B3%25E8%2581%2594%25E7%259F%25A9%25E9%2598%25B5%25E6%25B3%2595">关联矩阵法 - MBA智库百科</a></p>
+<p><a href="https://link.zhihu.com/?target=http%3A//blog.csdn.net/zhanghongju/article/details/18901857">Excel-漏斗图分析（差异分析）</a></p>
+<p><a href="https://link.zhihu.com/?target=http%3A//blog.sina.com.cn/s/blog_6301ba930102vg8o.html">如何玩转杜邦分析法</a></p>
+<h3 id="快速掌握excel分析技能">快速掌握excel分析技能</h3>
+<h4 id="1-excel学习">1、excel学习</h4>
+<p>数据计算课程：<a href="https://link.zhihu.com/?target=http%3A//www.excelhome.net/video/excel/formula/">excel函数公式</a>（合集）</p>
+<p>数据处理课程：<a href="https://link.zhihu.com/?target=http%3A//www.excelhome.net/video/excel/pivottable/">excel数据透视表</a>（合集）、<a href="https://link.zhihu.com/?target=http%3A//www.excelhome.net/video/excel/1338.html">切片器</a></p>
+<p>图表图形制作课程：<a href="https://link.zhihu.com/?target=http%3A//www.excelhome.net/video/excel/chart/">excel图表</a>（合集）、<a href="https://link.zhihu.com/?target=http%3A//www.excelhome.net/video/excel/1353.html">动态交互图表</a></p>
+<p>数据处理实战课程：<a href="https://link.zhihu.com/?target=http%3A//www.excelhome.net/video/jingcui/">excel实战精粹</a>（合集）</p>
+<h4 id="2-excel实操">2、excel实操</h4>
+<p>好用的函数能让你数据分析时，如有神助，下面是我在数据分析时常用的函数：<br>
+<code>常用函数（加总求和、计数、平均、最值、排序、乘积、除余、取整） 逻辑运算（if、iferror、and、or) 文本编辑（文本提取、文本查找、文本替换、文本转换及合并） 引用与查找（vlookup、hlookup、lookup、indirect、index、match)</code></p>
+<h5 id="1排序函数">1）排序函数</h5>
+<p>rank(排序的目标数值，区域，逻辑值）</p>
+<p>逻辑值如果输入0或者不输入时，为降序排列（数值越大，排名越靠前）；逻辑值输入非0时，为升序排列（数值越大，排名越靠后）</p>
+<ul>
+<li>比如：对业绩排名的计算，小李排名第5</li>
+</ul>
+<figure data-type="image" tabindex="8"><img src="https://pic3.zhimg.com/v2-b0dabd12109e02095f36aca2605b25a4_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="2逻辑判断">2）逻辑判断</h5>
+<p>if(计算条件的表达式或值，满足条件返回true,否则返回false)</p>
+<p>根据指定条件来判断其“满足”（TRUE）、“不满足”（FALSE），从而返回相应的内容。</p>
+<ul>
+<li>比如：判断团队业绩是否达标，小李和小军均不合格</li>
+</ul>
+<figure data-type="image" tabindex="9"><img src="https://pic1.zhimg.com/v2-87445ea5257b9c44b5bf426210055851_r.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://pic2.zhimg.com/v2-87c08a620f2c52f92e4298dfcaaf9d28_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="3计算文本长度">3）计算文本长度</h5>
+<p>len(要计算字符长度的文本），用来计算文本串的字符数</p>
+<ul>
+<li>比如：判断手机号是否有效，小李手机号少一位，为无效信息</li>
+</ul>
+<figure data-type="image" tabindex="11"><img src="https://pic2.zhimg.com/v2-38cdb7a1c0410edacdd29a5479b820dd_r.jpg" alt="" loading="lazy"></figure>
+<p>不全部列举了，这篇讲的比较全，可以移步参考：<a href="https://link.zhihu.com/?target=https%3A//blog.csdn.net/su_2018/article/details/83309905">知乎</a></p>
+<p>数据处理上，可以使用一些excel插件，提高处理速度：</p>
+<h5 id="1慧办公-适用版本office20032007201020132016365等-wps0132016等">1）<a href="https://link.zhihu.com/?target=http%3A//www.kge123.com/excel.html">慧办公</a> ：适用版本：Office2003/2007/2010/2013/2016/365等、WPS013/2016等</h5>
+<p><img src="https://pic3.zhimg.com/v2-aed5dad75c7d6133157757eedf850851_r.jpg" alt="" loading="lazy"><br>
+<img src="https://pic2.zhimg.com/v2-4255ff0507c52cbb8c1562cab42f9985_r.jpg" alt="" loading="lazy"></p>
+<h5 id="2excel易用宝-v2018-excel-home出品适用版本excel-2007201020132016和office-365">2）<a href="https://link.zhihu.com/?target=http%3A//yyb.excelhome.net/features/">Excel易用宝-V2018</a> ：Excel Home出品，适用版本：Excel 2007/2010/2013/2016和Office 365</h5>
+<figure data-type="image" tabindex="12"><img src="https://pic2.zhimg.com/v2-784e0967bd1735ffbac05b912dc0e537_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="3方方格子除了常见的excel工具箱外在公式审计财务图片邮件等领域还有一些付费插件-适用版本excel-2007~2016">3）<a href="https://link.zhihu.com/?target=http%3A//www.ffcell.com/home/products.aspx">方方格子</a>：除了常见的Excel工具箱外，在公式/审计/财务/图片/邮件等领域还有一些付费插件。适用版本：Excel 2007~2016</h5>
+<figure data-type="image" tabindex="13"><img src="https://pic1.zhimg.com/v2-514288c85843dd515817256b95df0c29_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="4excel必备工具箱-适用版本-excel2007201020132016">4）<a href="https://link.zhihu.com/?target=http%3A//www.ahzll.top/">Excel必备工具箱</a> ：适用版本： EXCEL2007/2010/2013/2016</h5>
+<figure data-type="image" tabindex="14"><img src="https://pic2.zhimg.com/v2-24ae4c95b2815361e98807cee10f7549_r.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="15"><img src="https://pic3.zhimg.com/v2-5b473ce74a72398676c3fbfe62c5d25f_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="5excel精灵-80版-excel精灵72网络版的功能比较全但有捆绑软件-适用版本excel-2007-2010-2013和2016">5）<a href="https://link.zhihu.com/?target=http%3A//www.excelbbx.net/Eling.htm">Excel精灵-8.0版</a> ：Excel精灵7.2网络版的功能比较全，但有捆绑软件。适用版本：Excel 2007、2010、2013和2016</h5>
+<figure data-type="image" tabindex="16"><img src="https://pic2.zhimg.com/v2-e7c8220e9b47d3b0c1c5dfb2de13f85b_r.jpg" alt="" loading="lazy"></figure>
+<h5 id="6easycharts-图表制作插件">6）<a href="https://link.zhihu.com/?target=https%3A//pan.baidu.com/s/1eREl5yM%23list/path%3D%252F">Easycharts</a> ：图表制作插件</h5>
+<p>注：插件方便也不用贪多，挑顺手的数据处理和图形制作的各一个即可。</p>
+<p>缺实操的伙伴，可以从https://hao.199it.com/找点数据练练手。常见的公开数据网站都可以搜索到：</p>
+<figure data-type="image" tabindex="17"><img src="https://pic1.zhimg.com/v2-f65a621a4325a0eafde530c5f17ecff9_r.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[认证证书模板]]></title>
         <id>https://lxj5820.github.io/post/DAp7Ujk3H/</id>
@@ -361,40 +634,6 @@ _   底线
 <p>接入图灵机器人支持各种生活服务，数字计算，图片搜索，中英翻译，新闻资讯，星座运势，笑话大全，故事大全等多种功能<br>
 <img src="https://lxj5820.github.io/post-images/1588228439166.png" alt="" loading="lazy"></p>
 <!-- more -->
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[又一次我开始做网站了]]></title>
-        <id>https://lxj5820.github.io/post/1/</id>
-        <link href="https://lxj5820.github.io/post/1/">
-        </link>
-        <updated>2020-04-30T00:49:12.000Z</updated>
-        <summary type="html"><![CDATA[<p>2020.4.30这是我第三次做网站了，前面每一次都因为各种原因不了了之了很是遗憾！<br>
-第一次因为服务器搬家导致无法恢复最后放弃<br>
-第二次因为没钱续费服务器直接烂尾<br>
-这一次我直接不要服务器了<br>
-使用<strong>GitHub</strong>+<strong>gridea</strong>建设又新一版的博客<br>
-特此纪念！！！</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>2020.4.30这是我第三次做网站了，前面每一次都因为各种原因不了了之了很是遗憾！<br>
-第一次因为服务器搬家导致无法恢复最后放弃<br>
-第二次因为没钱续费服务器直接烂尾<br>
-这一次我直接不要服务器了<br>
-使用<strong>GitHub</strong>+<strong>gridea</strong>建设又新一版的博客<br>
-特此纪念！！！</p>
-<!-- more -->
-<h1 id="可以写博客的那劲儿又回来了">可以，写博客的那劲儿又回来了</h1>
-<h1 id="markdown写作"><strong>Markdown</strong>写作</h1>
-<p>Markdown 是一种「标记语言」，通过简单的标记语法，使普通文本内容具有一定的格式。它最大的三个优点是：轻量、简单、通用，当前已经有很多人用它来写博客、写书甚至是写论文。</p>
-<p>它主要的好处有：</p>
-<ul>
-<li>专注于文字而抛开烦人的排版</li>
-<li>支持各种文本编辑器打开</li>
-<li>轻松转换为html、PDF等格式</li>
-<li>极好的可读性</li>
-</ul>
-<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1588224244319.png" alt="" loading="lazy"></figure>
-<p><a href="https://www.jianshu.com/p/a5387c159bd9">阅读原文-简书</a></p>
 ]]></content>
     </entry>
 </feed>
