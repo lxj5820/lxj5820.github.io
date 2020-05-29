@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="记录生活，提升自我">
 <meta name="theme-color" content="#000">
-<title>关于学习Markdown写作(更新) | 物理学圣剑</title>
+<title>物理学圣剑</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1590741208620">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -39,8 +39,6 @@
   })();
 </script>
 
-  <meta name="description" content="关于学习Markdown写作(更新)" />
-  <meta name="keywords" content="学习" />
 </head>
 
 <body>
@@ -166,26 +164,10 @@
   <div class="main-continer">
     
     <div
-      class="section-layout gemini ">
+      class="section-layout  gemini">
       <div class="section-layout-wrapper">
-        
-
-<div class="sidebar">
-  
-    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
-      
-        <div class="post-list-sidebar">
-          <div class="sidebar-title">
-            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
-            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
-          </div>
-        </div>
-      
-      <div class="sidebar-body gemini" id="sidebar_body">
-        
-          
-            <div class="post-side-meta" id="post_side_meta">
-              
+        <div id="sidebarMeta" class="sidebar">
+    
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -237,602 +219,96 @@
 
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number auto"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%E8%AE%A4%E8%AF%86markdow">认识Markdow</a></li>
-</ul>
-</li>
-<li><a href="#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95">基础语法</a>
-<ul>
-<li><a href="#%E6%A0%87%E9%A2%98">标题</a></li>
-<li><a href="#%E6%AE%B5%E8%90%BD%E5%8F%8A%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8">段落及区块引用</a></li>
-<li><a href="#%E6%8F%92%E5%85%A5%E9%93%BE%E6%8E%A5%E6%88%96%E5%9B%BE%E7%89%87">插入链接或图片</a></li>
-<li><a href="#%E5%88%97%E8%A1%A8">列表</a>
-<ul>
-<li><a href="#%E4%BD%BF%E7%94%A8%E5%88%97%E8%A1%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9">使用列表的一些注意事项</a></li>
-</ul>
-</li>
-<li><a href="#%E5%88%86%E9%9A%94%E7%BA%BF">分隔线</a></li>
-<li><a href="#%E5%BC%BA%E8%B0%83">强调</a></li>
-<li><a href="#%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81%E5%9D%97">插入代码块</a></li>
-<li><a href="#%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC">插入表格</a></li>
-</ul>
-</li>
-<li><a href="#%E5%85%B6%E5%AE%83">其它</a>
-<ul>
-<li><a href="#%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7%E5%A4%84%E7%90%86">特殊符号处理</a></li>
-<li><a href="#%E5%A6%82%E4%BD%95%E7%BB%99%E6%96%87%E5%AD%97%E4%B8%8A%E8%89%B2">如何给文字上色</a></li>
-<li><a href="#%E6%96%87%E5%AD%97%E5%B1%85%E4%B8%AD">文字居中</a></li>
-</ul>
-</li>
-<li><a href="#%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93">简单总结</a></li>
-</ul>
-</li>
-</ul>
-
-  </div>
 </div>
-
 <script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
       }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
     });
   }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
-          
-        
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          office
+          <small>标签</small>
+        </h2>
       </div>
-    </div>
-  
-</div>
-<script>
-  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
-  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
-  const SLIDE_UP_IN = 'slide-up-in';
-
-  let sidebar = document.querySelector('#sidebar'),
-  tocSideBar = document.querySelector('#tocSideBar'),
-  metaSideBar = document.querySelector('#metaSideBar'),
-  postToc = document.querySelector('#post_toc'),
-  postSiteMeta = document.querySelector('#post_side_meta'),
-  sidebarTitle = document.querySelector('.sidebar-title'),
-  sidebarBody = document.querySelector('#sidebar_body');
-
-  tocSideBar && tocSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  metaSideBar && metaSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  function toggleSidebar(e) {
-    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
-    if (currentTitle == e.srcElement) {
-      return ;
-    }
-    let current, showElement, hideElement;
-    if (e.srcElement == metaSideBar) {
-      showElement = postSiteMeta;
-      hideElement = postToc;
-    } else if (e.srcElement == tocSideBar){
-      showElement = postToc;
-      hideElement = postSiteMeta;
-    }
-    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
-    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
-
-    window.Velocity(hideElement, 'stop');
-    window.Velocity(hideElement, 'transition.slideUpOut', {
-      display: 'none',
-      duration: 200,
-      complete: function () {
-        window.Velocity(showElement, 'transition.slideDownIn', {
-          duration: 200
-        });
-      }
-    })
-    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
-    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
-  }
-
-  postToc && postToc.addEventListener('transitionend', function() {
-    this.classList.remove(SLIDE_UP_IN);
-  });
-
-  if (sidebarBody) {
-    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
-      let hasFix = false;
-      let scrollEl = document.querySelector('.main-continer');
-      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
-      window.addEventListener('scroll', function(e) {
-        if (document.scrollingElement.scrollTop >= limitTop) {
-          if (!hasFix) {
-            sidebar.classList.add('sidebar-fixed');
-            hasFix = true;
-          }
-        } else {
-          if (hasFix) {
-            sidebar.classList.remove('sidebar-fixed');
-            hasFix = false;
-          }
-        }
-      });
-    }
-  }
-  
-</script>
-        <div class="section-box box-shadow-wrapper">
-          <div class="section bg-color post post-page">
-            <header class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://lxj5820.github.io/post/003/">
-      关于学习Markdown写作(更新)
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span>发布于</span>
-      <span>2020-05-25</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
       
       
-      <a href="https://lxj5820.github.io/tag/YGlNDw4rT/">
-        <span>学习</span>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://lxj5820.github.io/post/005/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              05-25
+              <small>office办公服务</small>
+            </h1>
+          </div>
+        </div>
       </a>
       
       
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>7分钟</span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>1718<span class="pc-show">字数</span></span>
-    </span>
-    
-    
-    
-    <span id="/post/003/" data-flag-title="关于学习Markdown写作(更新)" class="meta-item pc-show leancloud_visitors">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-eye"></i>
-      <span>浏览量：<span class="leancloud-visitors-count"></span></span>
-    </span>
-    
-  </div>
-</header>
-            <div class="post-body next-md-body" id="post_body">
-              <h3 id="认识markdow">认识Markdow</h3>
-<p>Markdown 是一种「标记语言」，通过简单的标记语法，使普通文本内容具有一定的格式。它最大的三个优点是：轻量、简单、通用，当前已经有很多人用它来写博客、写书甚至是写论文。</p>
-<!-- more -->
-<p>它主要的好处有  [^1]  ：<br>
-专注于文字而抛开烦人的排版<br>
-支持各种文本编辑器打开<br>
-轻松转换为html、PDF等格式<br>
-极好的可读性</p>
-<h2 id="基础语法">基础语法</h2>
-<h3 id="标题">标题</h3>
-<p>Markdown支持6种级别的标题，对应html标签 h1 ~ h6</p>
-<pre><code># h1
-## h2
-### h3
-#### h4
-##### h5
-###### h6
-</code></pre>
-<p>除此之外，Markdown还支持另外一种形式的标题展示形式，其类似于 Setext 标记语言的表现形式，使用下划线进行文本大小的控制</p>
-<pre><code>wqd
-这是一级标题
-===
-这是二级标题
----
-</code></pre>
-<p>这种处理方式在Github的一些开源工程上面比较常见，显而易见的缺点是：文字大小控制级别有限。</p>
-<h3 id="段落及区块引用">段落及区块引用</h3>
-<p>需要记住的是，Markdown其实就是一种易于编写的普通文本，只不过加入了部分渲染文本的标签而已。其最终依然会转换为html标签，因此使用Markdown分段非常简单，前后至少保留一个空行即可</p>
-<p>而另外一个比较常见的需求就是，我们可能希望对某段文字进行强调处理。Markdown提供了一个特殊符号&gt;用于段首进行强调，被强调的文字部分将会高亮显示</p>
-<pre><code>&gt; 这段文字将被高亮显示...
-</code></pre>
-<h3 id="插入链接或图片">插入链接或图片</h3>
-<p>Markdown针对链接和图片的处理也比较简单，可以使用下面的语法进行标记</p>
-<pre><code>[点击跳转至百度](http://www.baidu.com)
-![图片](https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-</code></pre>
-<blockquote>
-<p>注： 引用图片和链接的唯一区别就是在最前方添加一个感叹号。</p>
-</blockquote>
-<h3 id="列表">列表</h3>
-<p>Markdown支持有序列表和无序列表两种形式：</p>
-<ul>
-<li>无序列表使用*或+或-标识</li>
-<li>有序列表使用数字加.标识，例如：1.</li>
-</ul>
-<pre><code>* 黄瓜
-* 玉米
-* 茄子
-
-+ 黄瓜
-+ 玉米
-+ 茄子
-
-- 黄瓜
-- 玉米
-- 茄子
-
-1. 黄瓜
-2. 玉米
-3. 茄子
-</code></pre>
-<p>注：这里比较有趣的地方是，对于有序列表，Markdown将只关注你的第一个项目的数字编号。例如：如果第一个项目编号是3，以此类推，第二个项目应该是4，最终将显示为3、4、5。而如果你指定了第一个编号，后面的编号指定错误也没有关系，Markdown将只在乎你的第一个项目编号。</p>
-<h4 id="使用列表的一些注意事项">使用列表的一些注意事项</h4>
-<p>如果在单一列表项中包含了多个段落，为了保证渲染正常，*与段落首字母之间必须保留四个空格</p>
-<pre><code>*    段落一
-
-     小段一
-*    段落二
-
-     小段二
-</code></pre>
-<p>另外，如果在列表中加入了区块引用，区域引用标记符也需要缩进4个空格</p>
-<pre><code>* 段落一
-    &gt; 区块标记一
-* 段落二
-    &gt; 区块标记二
-</code></pre>
-<p>注：记住一个原则，如果在和列表配合使用的时候出现了问题，就缩进一次，四个空格或者一个制表符代表一次缩进。如果一次缩进没有解决问题，那就两次。</p>
-<h3 id="分隔线">分隔线</h3>
-<p>有时候，为了排版漂亮，可能会加入分隔线。Markdown加入分隔线非常简单，使用下面任意一种形式都可以</p>
-<pre><code>***
----
-</code></pre>
-<p>产生分隔线的语法要求比较松，符号之间添加空格也可以。</p>
-<h3 id="强调">强调</h3>
-<p>有时候，我们希望对某一部分文字进行强调，使用*或_包裹即可。使用单一符号标记的效果是斜体，使用两个符号标记的效果是加粗</p>
-<pre><code>*这里是斜体*
-_这里是斜体_
-
-**这里是加粗**
-__这里是加粗__
-</code></pre>
-<p>##高级用法</p>
-<h3 id="插入代码块">插入代码块</h3>
-<p>Markdown在IT圈子里面比较流行的一个重要原因是，它能够轻松漂亮地插入代码。</p>
-<p>方法是，使用反引号`进行包裹即可。如果是行内代码引用，使用单个反引号进行包裹</p>
-<p>这是一段<code>var x = 3</code>行内代码</p>
-<p>如果插入一整段代码，需要至少使用两个以上反引号进行包裹， 看效果：</p>
-<pre><code>fun (x: Int, y: Int): Int {
-  return x + y
-}
-</code></pre>
-<p>注：很多人不知道怎么输入反引号。在英文模式下，找到键盘最左侧esc键下面的第一个键点击即可。</p>
-<h3 id="插入表格">插入表格</h3>
-<p>表格是Markdown语法中比较复杂的一个，其语法如下：</p>
-<pre><code>表头|条目一|条目二
-:---:|:---:|:---:
-项目|项目一|项目二
-</code></pre>
-<p>以上标记显示效果如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">表头</th>
-<th style="text-align:center">条目一</th>
-<th style="text-align:center">条目二</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">项目</td>
-<td style="text-align:center">项目一</td>
-<td style="text-align:center">项目二</td>
-</tr>
-</tbody>
-</table>
-<p>注：三个短斜杠左右的冒号用于控制对齐方式，只放置左边冒号表示文字居左，只放置右边冒号表示文字居右，如果两边都放置冒号表示文字居中。</p>
-<h2 id="其它">其它</h2>
-<h3 id="特殊符号处理">特殊符号处理</h3>
-<p>Markdown使用反斜杠\插入语法中用到的特殊符号。在Markdown中，主要有以下几种特殊符号需要处理：</p>
-<pre><code>\   反斜线
-`   反引号
-*   星号
-_   底线
-{}  花括号
-[]  方括号
-()  括弧
-#   井字号
-+   加号
--   减号
-.   英文句点
-!   惊叹号
-</code></pre>
-<p>例如，如果你需要插入反斜杠，就连续输入两个反斜杠即可：\ =&gt; \ 。</p>
-<p>注：在内容中输入以上特殊符号的时候一定要注意转义，否则将导致内容显示不全，甚至排版混乱。</p>
-<h3 id="如何给文字上色">如何给文字上色</h3>
-<p>使用Markdown的同学最郁闷的地方恐怕就是不能给文字添加颜色了。事实上，Markdown的最初目标就是为纯写作而生的。因此，它并没有考虑文字颜色这一点。所以，单纯使用Markdown设置文字颜色已经做不到了。但你可以这样做：</p>
-<p>先用Markdown编辑完成<br>
-导出为html，在需要上色的部分手动添加标签<code>&lt;font color='#ff0000'&gt;内容&lt;/font&gt;</code>保存即可。</p>
-<h3 id="文字居中">文字居中</h3>
-<p>在Markdown中有时会需要让文字在页面中居中只需要</p>
-<pre><code> &lt;center&gt;这段文字需要居中&lt;/center&gt; 
-</code></pre>
-  <center>这段文字需要居中</center> 
-<h2 id="简单总结">简单总结</h2>
-<p>Markdown是一门比html更简单的标记语言，其主要用于日常写作。最终通过相应的编辑器或者脚本转换成html用于页面渲染。如果你是一个作家，或者是一个程序员，Markdown对你来说是一门必备的技能。掌握Markdown真的很简单，如你所见，这篇文章使用了这么短的篇幅就已经将Markdown的语法全部介绍完了。</p>
-
-            </div>
-            <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong>本文作者：</strong>
-      李薛健
-    </li>
-    <li class="post-copyright-link">
-      <strong>本文链接：</strong>
-      <a href="https://lxj5820.github.io/post/003/" title="关于学习Markdown写作(更新)">https://lxj5820.github.io/post/003/</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明： </strong>
-      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-      <a href="https://lxj5820.github.io/tag/YGlNDw4rT/"># 学习</a>
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="自我的提升——学习网站" href="https://lxj5820.github.io/post/MsHehdzVa/">自我的提升——学习网站</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="自我的提升——学习网站" href="https://lxj5820.github.io/post/MsHehdzVa/">上一篇</a>
       
-    </div>
-    <div class="nav-next">
       
-        <a class="nav-pc-next" title="office办公服务" href="https://lxj5820.github.io/post/005/">office办公服务</a>
-        <a class="nav-mobile-next" title="office办公服务" href="https://lxj5820.github.io/post/005/">下一篇</a>
-        <i class="fa fa-chevron-right"></i>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
     </div>
   </div>
 </div>
-            
-  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
-<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
-
-<style>
-  .v .veditor {
-    min-height: 10rem;
-    background-image: url('https://www.easyicon.net/api/resizeApi.php?id=1239495&amp;size=128');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: rgba(255, 255, 255, 0);
-    resize: none;
-  }
-
-  .v .vwrap {
-    border: 1px solid #000 !important;
-  }
-
-  .v .vbtn {
-    padding: .4rem 1.2rem !important;
-    border-color: #fff !important;
-    background-color: #49b1f5 !important;
-    color: #fff !important;
-    font-size: .7rem !important;
-  }
-
-  .v .vcards .vcard .vh .vmeta .vat {
-    padding: 0 .8rem !important;
-    border: 1px solid #00c4b6 !important;
-    border-radius: 5px !important;
-    color: #00c4b6 !important;
-  }
-</style>
-<script>
-  new Valine({
-    el: '#vcomments',
-    appId: 'FEsIjAGYwt0s91ih36axJN0V-gzGzoHsz',
-    appKey: 'Ug8QtB6rTLaPRRg2GS84TtIW',
-    avatar: 'robohash',
-    placeholder: '这里可以评论哦！',
-    pageSize: '',
-    lang: 'zh-cn',
-    visitor: 'true' === 'true',
-    highlight: 'true' === 'true',
-    avatarForce: 'true' === 'true',
-  });
-</script>
-
-          </div>
+          </section>
         </div>
       </div>
     </div>
@@ -1542,36 +1018,6 @@ _   底线
   // 代码高亮
   hljs.initHighlightingOnLoad();
 
-</script>
-    <div class="light-box" id="light_box"></div>
-<script>
-  let imgs = document.querySelectorAll('.post-body img');
-  let lightBox = document.querySelector('#light_box');
-  lightBox.addEventListener('mousedown', (e) => {
-    e.preventDefault()
-  })
-  lightBox.addEventListener('mousewheel', (e) => {
-    e.preventDefault()
-  })
-  let width = window.innerWidth * 0.8;
-  lightBox.onclick = () => {
-    let img = lightBox.querySelector('img');
-    lightBox.style = '';
-    img && img.remove();
-  }
-  imgs.forEach(item => {
-    item.onclick = function (e) {
-      let lightImg = document.createElement('img');
-      lightImg.src = this.src;
-      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
-      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
-      lightImg.onclick = function () {
-        lightBox.style = '';
-        this.remove();
-      }
-      lightBox.append(lightImg);
-    }
-  })
 </script>
   </div>
 </body>
@@ -2379,5 +1825,6 @@ https://www.lanzous.com/i778f3a   密码:87q1&lt;/p&gt;
 
 
 <script src=" /media/js/cool.js"></script>
+
 
 </html>
