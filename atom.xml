@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-05-29T08:21:23.491Z</updated>
+    <updated>2020-05-29T08:28:37.392Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -73,14 +73,12 @@
 <p>常见的如完成值与目标值的差距，这个月与上个月的对比，同公司间各部门的对比，竞争对手行业内对比，这里要注意的是计算范围计算方法要一致，对象要一致，指标类型要一致。</p>
 <p>分组分析法：<a href="https://link.zhihu.com/?target=http%3A//blog.sina.com.cn/s/blog_49f78a4b0100ju4u.html">如何用EXCEL进行数据分组</a></p>
 <h5 id="结构分析法">结构分析法：</h5>
-<pre><code>结构相对指标（比例）的计算公式为：
-</code></pre>
+<p>结构相对指标（比例）的计算公式为：</p>
 <center> **结构相对指标（比例）=（总体某部分的数值/总体总量）x100%**</center>
 <p>结构分析法的优点是简单实用，在实际的企业运营分析中，市场占有率就是一个非常典型的应用。</p>
 <center>**市场占有率=（某种商品销售量/该中商品市场销售总量）x100%**</center>
 <h5 id="平均分析法">平均分析法：</h5>
-<pre><code>算数平均数的计算公式为：
-</code></pre>
+<p>算数平均数的计算公式为：</p>
 <center>**算数平均数=总体各单位数值的总和/总体单位个数**</center>
 <p>算术平均数是非常重要的基础性指标。平均数是综合指标，它的特点是将总体内各单位的数量差异抽象化，它能代表总体的一般水平，掩盖了在平均数后各单位的差异。<br>
 平均分析法要结合各种分组和指标对比来进行。比如分析不同行业、地区的平均从业人数、平均营业收入等。总之，对于所有数量指标都可以依据不同的分组用单位数来平均，进行对比与分析。</p>
