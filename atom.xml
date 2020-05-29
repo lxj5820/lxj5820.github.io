@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-05-29T08:14:25.400Z</updated>
+    <updated>2020-05-29T08:20:15.989Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -30,6 +30,7 @@
 探索性数据分析：高级数据分析，侧重于在数据之中发现新的特征<br>
 验证性数据分析：高级数据分析，高级数据分析，侧重于验证已有假设的真伪性</p>
 <!-- more -->
+<p>[toc]</p>
 <h4 id="数据分析5个阶段">数据分析5个阶段</h4>
 <ul>
 <li>
