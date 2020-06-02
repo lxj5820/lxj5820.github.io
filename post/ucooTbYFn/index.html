@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="记录生活，提升自我">
 <meta name="theme-color" content="#000">
-<title>【windows】QQ3.3.3防撤回微信2.9.123防撤回_多开 | 物理学圣剑</title>
+<title>评论区 | 物理学圣剑</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1591086323986">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -39,8 +39,8 @@
   })();
 </script>
 
-  <meta name="description" content="【windows】QQ3.3.3防撤回微信2.9.123防撤回_多开" />
-  <meta name="keywords" content="" />
+  <meta name="description" content="评论区" />
+  <meta name="keywords" content="物理学圣剑" />
 </head>
 
 <body>
@@ -197,7 +197,8 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -249,6 +250,192 @@
 
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#center%E5%8F%AF%E4%BB%A5%E5%8F%8D%E9%A6%88%E5%90%84%E7%A7%8D%E9%97%AE%E9%A2%98%E5%8F%8A%E5%BB%BA%E8%AE%AE%E4%B8%BA%E6%8F%90%E4%BE%9B%E5%AE%9D%E8%B4%B5%E6%84%8F%E8%A7%81%E8%80%85%E6%8F%90%E4%BE%9B%E4%B8%B0%E5%8E%9A%E5%A5%96%E5%8A%B1-center"><center>可以反馈各种问题及建议，为提供宝贵意见者提供丰厚奖励。  </center></a></li>
+<li><a href="#center-%E6%AC%A2%E8%BF%8E%E5%A4%A7%E5%AE%B6%E7%A7%AF%E6%9E%81%E8%AE%A8%E8%AE%BA-center"><center> 欢迎大家积极讨论  </center></a></li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
+      }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
+    });
+  }
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
           
         
       </div>
@@ -336,8 +523,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://lxj5820.github.io/post/0MGd0kMe1/">
-      【windows】QQ3.3.3防撤回微信2.9.123防撤回_多开
+    <a class="post-title-link" href="https://lxj5820.github.io/post/ucooTbYFn/">
+      评论区
     </a>
   </h1>
   <div class="post-meta">
@@ -345,9 +532,22 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-05-28</span>
+      <span>2020-06-02</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://lxj5820.github.io/tag/7OSdsnEIr/">
+        <span>物理学圣剑</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
@@ -356,12 +556,12 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>213<span class="pc-show">字数</span></span>
+      <span>33<span class="pc-show">字数</span></span>
     </span>
     
     
     
-    <span id="/post/0MGd0kMe1/" data-flag-title="【windows】QQ3.3.3防撤回微信2.9.123防撤回_多开" class="meta-item pc-show leancloud_visitors">
+    <span id="/post/ucooTbYFn/" data-flag-title="评论区" class="meta-item pc-show leancloud_visitors">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-eye"></i>
       <span>浏览量：<span class="leancloud-visitors-count"></span></span>
@@ -370,11 +570,8 @@
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p>更新微信2.9.0.123版正式版（带撤回提示、多开）<a href="https://winim.lanzous.com/icj8bwh">🌏点击下载</a><br>
-更新QQ3.3.3（27009）正式版防撤回 <a href="https://winim.lanzous.com/id1fivi">🌏点击下载</a></p>
-<!-- more -->
-<p>注：有些朋友替换出现无法登陆现象请注意自己的版本是否与描述的不同！请更新到最新版本在使用！    还有些不知道怎么使用的，直接在桌面找到需要替换的文件:如（QQ）右键打开文件所在位置直接复制下载好的IM到文件夹右键粘贴 替换就搞定！！</p>
-<p>关于封号：本补丁改动极少极少并没有hook任何附加。只是防撤回消息，太害怕的 大可不必使用。     并且楼主一直使用者，毫无问题，我也不能保证100%不封，至少我用了这么久是没问题的！</p>
+              <h1 id="center可以反馈各种问题及建议为提供宝贵意见者提供丰厚奖励-center"><center>可以反馈各种问题及建议，为提供宝贵意见者提供丰厚奖励。  </center></h1>
+<h1 id="center-欢迎大家积极讨论-center"><center> 欢迎大家积极讨论  </center></h1>
 
             </div>
             <div class="post-footer">
@@ -385,7 +582,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://lxj5820.github.io/post/0MGd0kMe1/" title="【windows】QQ3.3.3防撤回微信2.9.123防撤回_多开">https://lxj5820.github.io/post/0MGd0kMe1/</a>
+      <a href="https://lxj5820.github.io/post/ucooTbYFn/" title="评论区">https://lxj5820.github.io/post/ucooTbYFn/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -394,20 +591,14 @@
   </ul>
   <div class="tags">
     
+      <a href="https://lxj5820.github.io/tag/7OSdsnEIr/"># 物理学圣剑</a>
+    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="信用中国主页面源码" href="https://lxj5820.github.io/post/DbThF8TPp/">信用中国主页面源码</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="信用中国主页面源码" href="https://lxj5820.github.io/post/DbThF8TPp/">上一篇</a>
-      
     </div>
     <div class="nav-next">
-      
-        <a class="nav-pc-next" title="自我的提升——学习网站" href="https://lxj5820.github.io/post/MsHehdzVa/">自我的提升——学习网站</a>
-        <a class="nav-mobile-next" title="自我的提升——学习网站" href="https://lxj5820.github.io/post/MsHehdzVa/">下一篇</a>
-        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>
