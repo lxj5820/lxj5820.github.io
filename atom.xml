@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-06-16T15:44:01.449Z</updated>
+    <updated>2020-06-19T09:43:21.908Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑</rights>
+    <entry>
+        <title type="html"><![CDATA[摆摊必不可少的神器！]]></title>
+        <id>https://lxj5820.github.io/post/rmVO7Ye8I/</id>
+        <link href="https://lxj5820.github.io/post/rmVO7Ye8I/">
+        </link>
+        <updated>2020-06-19T09:03:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>现在摆摊的人越来越多如何才能在众多同行中脱颖而出呢？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>现在摆摊的人越来越多如何才能在众多同行中脱颖而出呢？</p>
+<!-- more -->
+<p>这个时候你就需要一个吸引目光的海报了，<br>
+一个好的海报能让你迅速吸引人群的目光，<br>
+帮助你更快的销售出你的商品，<br>
+<img src="https://lxj5820.github.io/post-images/1592558361932.png" alt="" loading="lazy"><br>
+<img src="https://lxj5820.github.io/post-images/1592559086587.png" alt="" loading="lazy"><br>
+<img src="https://lxj5820.github.io/post-images/1592559245511.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[京东叠蛋糕PC版开源工具]]></title>
         <id>https://lxj5820.github.io/post/3-G0MUsbr/</id>
@@ -838,28 +856,6 @@ _   底线
 <figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/%E5%9B%9B%E5%90%88%E9%99%A22018.11.22-01.jpg" alt="" loading="lazy"></figure>
 <h2 id="结构">【结构】</h2>
 <figure data-type="image" tabindex="2"><img src="https://lxj5820.github.io/post-images/jiegou.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何在电脑端同时开启多个微信]]></title>
-        <id>https://lxj5820.github.io/post/wx/</id>
-        <link href="https://lxj5820.github.io/post/wx/">
-        </link>
-        <updated>2020-05-03T07:44:39.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="01">01.</h2>
-<p>在Windows 10 系统中，可以下载windows 客户端的同时，在微软应用商城下载另一个版本的独立应用<br>
-<img src="https://cdn.labs.topbook.cc/topbook/img/e5e5c26fcd441128f00acf6311a12f608" alt="" loading="lazy"></p>
-<h2 id="02">02.</h2>
-<ol>
-<li>
-<p>新建一个记事本</p>
-</li>
-<li>
-<p>在其中输入<code>start &quot;程序地址&quot;</code>（注意引号为英文状态，且前后有空格）</p>
-<p>然后想开几个微信就复制几次<br>
-<img src="https://cdn.labs.topbook.cc/topbook/img/e4d59f89e66b50fd2b880d79235f057d2" alt="" loading="lazy"></p>
-</li>
-</ol>
 ]]></content>
     </entry>
 </feed>
