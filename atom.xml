@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-06-22T02:03:01.941Z</updated>
+    <updated>2020-06-22T03:04:50.440Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑</rights>
+    <entry>
+        <title type="html"><![CDATA[bandizip v7.08专业版]]></title>
+        <id>https://lxj5820.github.io/post/N-dlfkR5A/</id>
+        <link href="https://lxj5820.github.io/post/N-dlfkR5A/">
+        </link>
+        <updated>2020-06-22T02:44:34.000Z</updated>
+        <content type="html"><![CDATA[<p>软件官网：https://www.bandisoft.com/bandizip/</p>
+<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1592795064528.png" alt="" loading="lazy"></figure>
+<p>安装后吧压缩包内的“Bandizip_v7.xx_x64”复制到安装根目录（32位系统的，使用x32这个文件），然后双击运行，关闭。</p>
+<p>打开bandizip主页面，点击激活按钮，邮箱随便输入，激活码输入随意一个。</p>
+<p>激活码：<br>
+20380808-ENT000002-0E34A52561-166371E0</p>
+<p>20380808-PRO0BFAEBFDAE23C425E-173E2DF1</p>
+<figure data-type="image" tabindex="2"><img src="https://lxj5820.github.io/post-images/1592794993733.png" alt="" loading="lazy"></figure>
+<p><a href="https://wwa.lanzous.com/idoCEdxe07c">授权文件和bandizip官网软件下载</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[一键解决Windows10访问局域网的问题]]></title>
         <id>https://lxj5820.github.io/post/s6_jEYKWr/</id>
@@ -864,23 +881,6 @@ _   底线
   <center>这段文字需要居中</center> 
 <h2 id="简单总结">简单总结</h2>
 <p>Markdown是一门比html更简单的标记语言，其主要用于日常写作。最终通过相应的编辑器或者脚本转换成html用于页面渲染。如果你是一个作家，或者是一个程序员，Markdown对你来说是一门必备的技能。掌握Markdown真的很简单，如你所见，这篇文章使用了这么短的篇幅就已经将Markdown的语法全部介绍完了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[office办公服务]]></title>
-        <id>https://lxj5820.github.io/post/005/</id>
-        <link href="https://lxj5820.github.io/post/005/">
-        </link>
-        <updated>2020-05-25T05:33:05.000Z</updated>
-        <summary type="html"><![CDATA[<center><font face="黑体" size=6>一切跟OFFICE有关的我们都可以代劳</font></center>
-<center><font  color=red size=5>Office专业团队  资料决定保密  一对一服务</font> </center>
-]]></summary>
-        <content type="html"><![CDATA[<center><font face="黑体" size=6>一切跟OFFICE有关的我们都可以代劳</font></center>
-<center><font  color=red size=5>Office专业团队  资料决定保密  一对一服务</font> </center>
-<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1590385462259.png" alt="" loading="lazy"></figure>
-<h2 id="联系方式qq2158346084-暗号5820">联系方式：QQ：2158346084  暗号:5820</h2>
-<h2 id="微信17608072609">微信：17608072609</h2>
 ]]></content>
     </entry>
 </feed>
