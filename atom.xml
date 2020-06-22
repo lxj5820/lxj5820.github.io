@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-06-19T10:03:43.194Z</updated>
+    <updated>2020-06-22T02:03:01.941Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,43 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑</rights>
+    <entry>
+        <title type="html"><![CDATA[一键解决Windows10访问局域网的问题]]></title>
+        <id>https://lxj5820.github.io/post/s6_jEYKWr/</id>
+        <link href="https://lxj5820.github.io/post/s6_jEYKWr/">
+        </link>
+        <updated>2020-06-22T02:02:23.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>echo off
+&gt;nul 2&gt;&amp;1 &quot;%SYSTEMROOT%\system32\cacls.exe&quot; &quot;%SYSTEMROOT%\system32\config\system&quot;
+setlocal enabledelayedexpansion
+echo.
+ver | find &quot;10.&quot; &gt; NUL &amp;&amp; goto win10
+ 
+:error
+mshta vbscript:msgbox(&quot; 操作系统不是Windows10，此脚本不适用。&quot;,vbSystemModal+64,&quot;不要开玩笑!&quot;)(window.close) 
+exit
+ 
+:win10
+ 
+::改写组策略
+echo Windows Registry Editor Version 5.00 &gt;%temp%\smb.reg
+echo. &gt;&gt; %temp%\smb.reg
+echo [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LanmanWorkstation] &gt;&gt; %temp%\smb.reg
+echo @=&quot;&quot;  &gt;&gt; %temp%\smb.reg
+echo &quot;AllowInsecureGuestAuth&quot;=dword:00000001 &gt;&gt; %temp%\smb.reg
+regedit /s %temp%\smb.reg
+ 
+echo 添加smb访问组件
+dism /online /format:table /get-features
+dism /online /enable-feature /featurename:SMB1Protocol
+ 
+mshta vbscript:msgbox(&quot; 设置完成。电脑重启后生效！&quot;,vbSystemModal+64,&quot;注意！！！&quot;)(window.close) 
+ 
+exit
+</code></pre>
+<p>EXE文件：<a href="https://wwa.lanzous.com/iQYjCdwuicf">下载地址</a></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[摆摊必不可少的神器！]]></title>
         <id>https://lxj5820.github.io/post/rmVO7Ye8I/</id>
@@ -844,21 +881,6 @@ _   底线
 <figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1590385462259.png" alt="" loading="lazy"></figure>
 <h2 id="联系方式qq2158346084-暗号5820">联系方式：QQ：2158346084  暗号:5820</h2>
 <h2 id="微信17608072609">微信：17608072609</h2>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[设计作品]]></title>
-        <id>https://lxj5820.github.io/post/she-ji-zuo-pin/</id>
-        <link href="https://lxj5820.github.io/post/she-ji-zuo-pin/">
-        </link>
-        <updated>2020-05-15T01:44:27.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="效果">【效果】</h2>
-<p><img src="https://lxj5820.github.io/post-images/1589507122048.png" alt="" loading="lazy"><br>
-<img src="https://lxj5820.github.io/post-images/1589507133566.png" alt="" loading="lazy"></p>
-<h2 id="平面">【平面】</h2>
-<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/%E5%9B%9B%E5%90%88%E9%99%A22018.11.22-01.jpg" alt="" loading="lazy"></figure>
-<h2 id="结构">【结构】</h2>
-<figure data-type="image" tabindex="2"><img src="https://lxj5820.github.io/post-images/jiegou.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
