@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxj5820.github.io</id>
     <title>物理学圣剑</title>
-    <updated>2020-06-30T09:02:36.115Z</updated>
+    <updated>2020-07-02T02:56:20.582Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxj5820.github.io"/>
     <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://lxj5820.github.io/images/avatar.png</logo>
     <icon>https://lxj5820.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 物理学圣剑</rights>
+    <entry>
+        <title type="html"><![CDATA[网页版腾讯视频MP4格式下载]]></title>
+        <id>https://lxj5820.github.io/post/VA2t2aIjt/</id>
+        <link href="https://lxj5820.github.io/post/VA2t2aIjt/">
+        </link>
+        <updated>2020-07-02T02:37:40.000Z</updated>
+        <content type="html"><![CDATA[<p>只能下载你能看到的视频内容，<font color='#ff0000'>下载后视频格式为MP4 无水印 下载的清晰度为选择播放的清晰度</font></p>
+<p>方法如下：<br>
+复制代码</p>
+<pre><code>javascript:var a=prompt(PLAYER._DownloadMonitor.context.dataset.title,PLAYER._DownloadMonitor.context.dataset.ckc?PLAYER._DownloadMonitor.context.dataset.currentVideoUrl:PLAYER._DownloadMonitor.context.dataset.currentVideoUrl.replace(/:.*qq.com/g,&quot;://defaultts.tc.qq.com/defaultts.tc.qq.com&quot;));
+</code></pre>
+<p>1、打开浏览器，新建一个书签<br>
+2、修改书签，名称随意，将网站改为上面的代码，保存<br>
+3、打开你想下载的视频，点击刚才保存的书签，然后复制弹出的代码<br>
+4、随便用个下载器下载</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[office密钥]]></title>
         <id>https://lxj5820.github.io/post/wLx5imiEm/</id>
@@ -678,19 +695,6 @@ excuteMain();
 <h1 id="详情请咨询客服qq">详情请咨询客服（QQ）：</h1>
 <figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1590717666875.jpg" alt="" loading="lazy"></figure>
 <figure data-type="image" tabindex="2"><img src="https://lxj5820.github.io/post-images/1590717710690.png" alt="" loading="lazy"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[信用中国主页面源码]]></title>
-        <id>https://lxj5820.github.io/post/DbThF8TPp/</id>
-        <link href="https://lxj5820.github.io/post/DbThF8TPp/">
-        </link>
-        <updated>2020-05-29T01:06:57.000Z</updated>
-        <summary type="html"><![CDATA[<p>下载地址：<a href="https://lanzous.com/id3tcuh">🌐蓝奏云下载</a></p>
-]]></summary>
-        <content type="html"><![CDATA[<p>下载地址：<a href="https://lanzous.com/id3tcuh">🌐蓝奏云下载</a></p>
-<!-- more -->
-<figure data-type="image" tabindex="1"><img src="https://lxj5820.github.io/post-images/1590714661851.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
