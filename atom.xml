@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lxj5820.github.io</id>
+    <title>物理学圣剑</title>
+    <updated>2022-12-30T13:17:14.764Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lxj5820.github.io"/>
+    <link rel="self" href="https://lxj5820.github.io/atom.xml"/>
+    <subtitle>记录生活，提升自我</subtitle>
+    <logo>https://lxj5820.github.io/images/avatar.png</logo>
+    <icon>https://lxj5820.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, 物理学圣剑</rights>
+    <entry>
+        <title type="html"><![CDATA[证书]]></title>
+        <id>https://lxj5820.github.io/post/证书/</id>
+        <link href="https://lxj5820.github.io/post/证书/">
+        </link>
+        <updated>2022-12-30T12:01:46.000Z</updated>
+        <content type="html"><![CDATA[ <!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+ <body>
+ <div class="zs">    
+        <img src="/post-images/zs2.jpg">        
+        <div class="gangwei">装饰装修质量员</div>        
+        <div class="xx">物理学圣剑</div>        
+        <div class="sfz">510124************</div>        
+        <div class="bianhao">0512011300007000131</div>                
+        <div class="jigou">四川建筑职业技术学院</div>           
+        <div class="nian">2021</div>       
+        <div class="yue">5</div>        
+        <div class="ri">19</div>              
+        <img class="tupian" src="/post-images/3_202206271205039c68e.jpeg">   
+        <div id="output">
+            <img src="/post-images/3051.png" class="aaa">
+</div>
+</body>
+<style>
+<pre><code>body{
+    
+    font-family: 宋体!important;
+}
+.zs{
+    
+    position: relative;
+    width: 1320px;
+    margin: auto;
+
+}
+.zs img{
+    
+        width: 1320px;
+       position: absolute;
+       top: 10px;
+       left: 50%;
+       margin-left: -650px;
+    
+}
+
+.xx{
+   position: absolute;
+   top: 580px;
+   left: 740px;
+   font-size: 30px;
+   color: #000;
+}
+
+.xb{
+    position: absolute;
+   top: 580px;
+   left: 740px;
+   font-size: 20px;
+}
+
+.sfz{
+   position: absolute;
+   top: 715px;
+   left: 740px;
+   font-size: 30px;
+   color: #000;
+}
+
+.bianhao{
+       position: absolute;
+       top: 150px;
+       left: 890px;
+       font-size: 30px;
+       color: #000;
+}
+
+.tupian{
+    position: absolute;
+</code></pre>
+<p>width: 200px !important;<br>
+height: 260px;<br>
+z-index: 99999;<br>
+margin-left: -400px !important;<br>
+margin-top: 600px !important;<br>
+border-radius: 2px;<br>
+}</p>
+<pre><code>.gangwei{
+       position: absolute;
+</code></pre>
+<p>top: 845px;<br>
+left: 740px;<br>
+font-size: 30px;<br>
+color: #000;;</p>
+<pre><code>}
+#output{
+   position: absolute;
+</code></pre>
+<p>top: 1480px;<br>
+left: 220px;<br>
+width: 200px !important;<br>
+}</p>
+<pre><code>.jigou{
+   position: absolute;
+   margin-top: 1555px;
+   margin-left: 790px;
+   z-index: 99;
+   font-size: 30px;
+   color: #000;
+}
+
+.nian,.yue,.ri{
+    
+   position: absolute;
+   margin-top: 1645px;
+   margin-left: 785px;
+   z-index: 99;
+   font-size: 30px;
+   color: #000;
+}
+
+.yue{
+    margin-left: 885px;
+}
+
+.ri{
+    
+    margin-left: 950px;
+}
+.aaa{
+    margin: 0px !important;
+</code></pre>
+<p>z-index: 999 !important;<br>
+width: 180px !important;<br>
+margin-left: -100px !important;<br>
+}<br>
+</style></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My Online Store【我的在线商店】]]></title>
+        <id>https://lxj5820.github.io/post/商店/</id>
+        <link href="https://lxj5820.github.io/post/商店/">
+        </link>
+        <updated>2022-12-30T11:16:22.000Z</updated>
+        <content type="html"><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+  <title>My Online Store【测试】</title>
+</head>
+<body>
+  <header>
+    <h1>My Online Store【测试】</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="featured-products">
+      <h2>特色产品</h2>
+      <ul>
+        <li>
+          <img src="/post-images/product1.png" alt="Product 1">
+          <h3>古风日系人视鸟瞰效果图PSD素材SU模型人物植物参考图片PS素材</h3>
+          <p>￥29.99</p>
+          <button>立即购买</button>
+        </li>
+        <li>
+          <img src="/post-images/product2.png" alt="Product 2">
+          <h3>城市设计效果图psd文本及竞赛展板大礼包</h3>
+          <p>￥39.99</p>
+          <button>立即购买</button>
+        </li>
+        <li>
+          <img src="/post-images/product3.png" alt="Product 3">
+          <h3>全新竞赛风精选彩色平面图植物PSD合集 建筑景观高端竞赛风源文件</h3>
+          <p>￥49.99</p>
+          <button>立即购买</button>
+        </li>
+      </ul>
+    </section>
+    <section id="new-products">
+      <h2>新产品</h2>
+      <ul>
+        <li>
+          <img src="/post-images/product4.jpg" alt="Product 4">
+          <h3>Product 4</h3>
+          <p>$59.99</p>
+          <button>立即购买</button>
+        </li>
+        <li>
+          <img src="/post-images/product5.jpg" alt="Product 5">
+          <h3>Product 5</h3>
+          <p>$69.99</p>
+          <button>立即购买</button>
+        </li>
+        <li>
+          <img src="/post-images/product6.jpg" alt="Product 6">
+          <h3>Product 6</h3>
+          <p>$79.99</p>
+          <button>立即购买</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright 2022 My Online Store</p>
+  </footer>
+</body>
+</html>
+<style>
+       /* 页眉样式 */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+    header h1 {
+  margin: 0;
+}<style>
+       /* 页眉样式 */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+    header h1 {
+  margin: 0;
+}
+header nav {
+  display: flex;
+}
+    header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+    header nav ul li {
+  margin: 0 10px;
+}
+    header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+/* 产品列表样式 */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ul li {
+  width: 30%;
+  margin-bottom: 20px;
+}
+ul li img {
+  width: 100%;
+  height: auto;
+}
+ul li h3 {
+  margin: 10px 0;
+}
+ul li p {
+  font-weight: bold;
+  color: #f00;
+}
+ul li button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* 页脚样式 */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[win11升级]]></title>
+        <id>https://lxj5820.github.io/post/DtgevciYD/</id>
+        <link href="https://lxj5820.github.io/post/DtgevciYD/">
+        </link>
+        <updated>2021-11-03T05:05:20.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="windows11升级安装方法">Windows11升级安装方法</h1>
+<p>测试到22463.1000，删除appraiserres.dll文件的方法依然有用。</p>
+<p>解压替换原版ISO镜像\sources\appraiserres.dll文件，然后双击setup.exe进行升级安装，这种方法升级安装的过程不会有任何提升最新版测试可行（2021.9.24）。</p>
+<h2 id="打造解除硬件限制的iso镜像">打造解除硬件限制的ISO镜像</h2>
+<p>将原版ISO镜像通过简单的几步，打造成解除限制的ISO镜像。可以解除以下限制：<br>
+1、解除UEFI、安全启动的限制，可以直接在Legacy环境下安装；<br>
+2、解除TPM2.0的要求；<br>
+3、解除最低内存以及最小磁盘容量的要求；</p>
+<h3 id="制作方法">制作方法</h3>
+<p><strong>准备条件：</strong><br>
+·win11最新ISO镜像：<a href="https://uupdump.net">前往下载</a><br>
+·脚本工具：<a href="https://wwi.lanzoui.com/ivzaZuf4vkf">前往下载</a><br>
+<strong>制作步骤：</strong><br>
+1、将脚本工具解压，然后把win11的ISO镜像复制到目录Source_ISO\W11下。<br>
+2、以管理员身份运行批处理文件，如下图所示。<br>
+<img src="https://lxj5820.github.io/post-images/1635950849431.png" alt="" loading="lazy"><br>
+3、选择2，回车等待，等待大概几分钟即可制作完成，重新生成的ISO镜像将存放在批处理的同目录下。<br>
+脚本来自MDl论坛，汉化：知彼而知己</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CAD崩溃补救]]></title>
+        <id>https://lxj5820.github.io/post/JEhrV2wkk/</id>
+        <link href="https://lxj5820.github.io/post/JEhrV2wkk/">
+        </link>
+        <updated>2021-09-28T07:07:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>图画好了，突然来个拉闸限电或者软件崩溃，图还没保存，是不是崩溃？<br>
+不要怕，做好以下这点随时拉闸限电。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>图画好了，突然来个拉闸限电或者软件崩溃，图还没保存，是不是崩溃？<br>
+不要怕，做好以下这点随时拉闸限电。</p>
+<!-- more -->
+<p>CAD里输入op回车；</p>
+<p>选择【打开和保存】，文件安全措施里设置好自动保存时间；</p>
+<p>假如我在CAD里画好了以下图形；</p>
+<p>突然电脑关机或CAD异常退出，怎么办？<br>
+在电脑地址栏输入%temp%回车；</p>
+<p>按时间排序一下，我们可以看到这边会有自动保存和临时文件文件，后缀分别为.sv<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">和</mi><mi mathvariant="normal">.</mi><mi>a</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">和.ac</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord cjk_fallback">和</span><span class="mord">.</span><span class="mord mathdefault">a</span><span class="mord mathdefault">c</span></span></span></span>；</p>
+<p>如果你不显示后缀，只需要点击查看，将文件拓展名勾上即可；</p>
+<p>然后将最大的一个文件后缀改成.dwg即可；</p>
+<p>打开改好的dwg文件如图。</p>
+<p>注：如果你更改过自动保存和临时保存文件位置，通过%temp%找不到，请打开你的位置，具体位置如图。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows10系统简介(1)——版本/更新/代号介绍]]></title>
+        <id>https://lxj5820.github.io/post/pJSoxwpJb/</id>
+        <link href="https://lxj5820.github.io/post/pJSoxwpJb/">
+        </link>
+        <updated>2021-09-27T01:58:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>Windows10到底有几个版本？每个版本的区别是什么？估计在网上搜索之后，也不太容易找到完整的答案。Windows10总共有12个版本。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Windows10到底有几个版本？每个版本的区别是什么？估计在网上搜索之后，也不太容易找到完整的答案。Windows10总共有12个版本。</p>
+<!-- more -->
+<p>Windows 10家庭版(Home)<br>
+Windows 10专业版(Pro)<br>
+Windows 10专业版工作站版(Pro Workstation)<br>
+Windows 10教育版(Education)<br>
+Windows 10专业教育版(Pro Education)<br>
+Windows 10企业版(Enterprise)<br>
+Windows 10企业版 LTSB分支（Long Time Service Branch）<br>
+Windows 10企业版 LTSC分支（Long Term Servicing Channel）<br>
+Windows 10移动版(Mobile)<br>
+Windows 10企业移动版(Mobile Enterprise)<br>
+Windows 10物联网版 (IoT Core)<br>
+Windows 10 S版</p>
+<h3 id="1-windows10版本介绍">1、Windows10版本介绍</h3>
+<p>其中前6个版本是平时常见的版本。<br>
+<strong>家庭版</strong> ，顾名思义，为家庭和个人提供的版本，只有最基本的功能。<br>
+<strong>专业版</strong> ，在家庭版的基础上增加了Windows Update for Business（WUB）功能，允许用户管理设备及应用、保护敏感企业数据、支持远程及移动生产力场景、云技术支持等，可以让企业管理者更快地获取安全更新，并控制更新部署。<br>
+<strong>专业工作站版</strong> ，在专业版的基础上增加了服务器相关的功能。比如支持4路CPU和6TB内存，支持ReFS文件系统、RDMA、NVDIMM等。<br>
+<strong>企业版</strong> ，包含Windows10的所有功能和WUB，是功能最全的版本。<br>
+<strong>教育版</strong> ，基于企业版，本质是是企业版，主要针对学校、科研等教育机构使用，功能与企业版一样，只是面向的用户不同，默认设置不太一样。<br>
+<strong>专业教育版</strong> ，基于专业版，本质上是专业版，只是用于教育用户，提供特定于教育的默认设置。<br>
+<strong>企业版LTSB和LTSC</strong>是企业版的特别版本，从名称看可知是长期服务版本，LTSC是LTSB的升级版本，何为长期服务？不进行功能性升级即版本号不变，只进行安全等相关的更新，微软承诺为这个版本提供10年的安全补丁和修复。该版本无应用商店、Edge浏览器，cortana等，相当于是微软官方的精简企业版，没有各类花里胡哨的功能，使用比较稳定，正因为如此也是很多网友喜欢安装的原因。<br>
+<strong>移动版</strong>，主要用于手机平板电脑等。<br>
+<strong>物联网版</strong>，主要用于销售终端、ATM或其他嵌入式设备等。<br>
+<strong>Win10 S版</strong>，主要面像教育市场推出，该系统的主要特点就是仅允许安装来自Windows 10 应用商店的应用程序同时还会阻止普通的桌面程序安装。</p>
+<h3 id="2-windows10更新分支">2、Windows10更新分支</h3>
+<p>上文介绍了LTSB/LTSC更新分支，实际上在Win10时代更新非常频繁，共有两大更新分支：Windows Insider Preview Branch（预览分支）和Windows Update for Business。前者面向测试人员，时刻保持功能最新；后者面向正式用户，定期为连接 Windows Update 的设备推送更新、实现更新的渐进式应用、测试和部署，通常包括：Current Branch（CB）、Current Branch for Business（CBB）、Long Term Servicing Branch（LTSC）。<br>
+<strong>CB分支</strong>，主要针对普通用户和小型组织，通过 Windows Update 在第一时间接收和安装最新的功能更新。<br>
+<strong>CBB分支</strong>，主要针对商业和企业用户，延迟四个月接收更新。<br>
+<strong>LTSC分支</strong>，在第1节已经介绍。<br>
+下面三张图非常形象的展示了不同分支的更新频率。<br>
+<img src="https://lxj5820.github.io/post-images/1632708342424.jpg" alt="" loading="lazy"><br>
+<img src="https://lxj5820.github.io/post-images/1632708349796.jpg" alt="" loading="lazy"><br>
+<img src="https://lxj5820.github.io/post-images/1632708357125.jpg" alt="" loading="lazy"></p>
+<h3 id="3-windows10开发代号-版本号-内部版本号">3、Windows10开发代号、版本号、内部版本号</h3>
+<p><strong>第一阶段</strong>：2014年Win10发布了第一个正式版，开发代号为Threshold 1，简称TH1，几个月后紧接着发布了TH2。</p>
+<p>** 第二阶段**：大约一年后进行了较大的变革，发布了Redstone 1，简称RS1，直到2018年更新到RS5。这一阶段的系统改变较大，随之而来的bug也越来越多，所以很多人将Win10戏称的Bug10。</p>
+<p><strong>第三阶段</strong>：这一阶段开发代号直接以年份命名，每年更新两个大版本，比如今年上半年的更新命名为21H1。每年除了这两次大版本的更新以外，还有多次的小更新。</p>
+<p>版本号一般是一个四位数，比如1903、2004等，微软以年份+月份命名“版本号”，比如版本号2004指的就是2020年4月发布的大版本更新，也是20H1版，他俩指的是一个版本。但从20H2之后，版本号和开发代号干脆也不再区分了，即20H2即是开发代号又是版本号。</p>
+<p>内部版本号一般为5位数字，是一个一直往上增加的数字，和软件的版本升级一样，肯定是越更新数字越大，这个数字我们可以通过命令“ver”查询，例如下图中的18363：<br>
+<img src="https://lxj5820.github.io/post-images/1632708502219.jpg" alt="" loading="lazy"><br>
+总之，在Win10时代，版本更新频繁，版本号尤其混乱，只要掌握了命名的规律，这些问题都不再是问题了。以下是几个例子：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">开发代号</th>
+<th style="text-align:center">版本号</th>
+<th style="text-align:center">内部版本号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">RS5</td>
+<td style="text-align:center">1809</td>
+<td style="text-align:center">17763</td>
+</tr>
+<tr>
+<td style="text-align:center">19H1</td>
+<td style="text-align:center">1903</td>
+<td style="text-align:center">18362</td>
+</tr>
+<tr>
+<td style="text-align:center">20H1</td>
+<td style="text-align:center">2004</td>
+<td style="text-align:center">19041</td>
+</tr>
+<tr>
+<td style="text-align:center">21H1</td>
+<td style="text-align:center">21H1</td>
+<td style="text-align:center">19043</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="https://lxj5820.github.io/post-images/1632708695466.jpg" alt="" loading="lazy"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="https://lxj5820.github.io/post-images/1632708703104.jpg" alt="" loading="lazy"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CAD中SHX和TTF字体的优劣势对比和分别适用的地方]]></title>
+        <id>https://lxj5820.github.io/post/qubie/</id>
+        <link href="https://lxj5820.github.io/post/qubie/">
+        </link>
+        <updated>2021-08-28T06:07:48.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="定义">定义：</h4>
+<p>何为SHX字体？何为TTF字体？<br>
+简单来说，SHX字体为cad本身自带字体，TTF字体为操作系统自带字体。<br>
+其中SHX字体分为两种：字形和符号形。<br>
+字形又分两种：大字形（亚洲文字）和小字形（西方文字）。<br>
+符号形：指特色符号、图形或定义线型中图形。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="定义">定义：</h4>
+<p>何为SHX字体？何为TTF字体？<br>
+简单来说，SHX字体为cad本身自带字体，TTF字体为操作系统自带字体。<br>
+其中SHX字体分为两种：字形和符号形。<br>
+字形又分两种：大字形（亚洲文字）和小字形（西方文字）。<br>
+符号形：指特色符号、图形或定义线型中图形。</p>
+<!-- more -->
+<h4 id="优劣对比">优劣对比：</h4>
+<p>**容量：**SHX字体比TTF字体容量要小很多。</p>
+<p>**显示速度：**SHX字体显示速度比TTF字体要快。</p>
+<p>**精度：**SHX字体的长宽是非常准确的，而TTF因是外来字体，准确度较差。</p>
+<p>**效果：**SHX字体为线型字体，可以指定各种特殊效果，比如厚度。而TTF字体者没有这些效果。</p>
+<p>**美观：**SHX字体相对于TTF字体在美观方面稍有不如。</p>
+<p>**打印：**SHX字体会因颜色图层不同，而出现不同粗细淡浓，而TTF没有这方面的影响。</p>
+<p>建议适用地方（以建筑制图为例）：</p>
+<p>**SHX字体：**尺寸标注、门窗编号、索引文字、引出文字、轴号建议使用。（原因：1.这些文字，图纸中会大量出现，为避免影响容量；2.因打印原因，考虑到其他专业，会需要将建筑底图变灰，若使用TTF文字，文字便无法变灰；3.SHX字体长宽准确，在制图中尤其重要）</p>
+<p>**TTF字体：**图框中的名称、图形标题、目录建议使用。（TTF较美观，所有可在图名等位置使用）</p>
+<hr>
+<p>关于cad中文字样式的几点看法：<br>
+文字样式：图纸中文字样式应尽量丰富，这样才可以根据需要控制某一类文字的高宽比等，推荐制作7种左右。<br>
+(PS:更正一下，之前陷入思维误区了，文字样式可整合成3种：0.70文字SHX、宋体TTF、黑体TTF。之前写着文章时，想着只通过文字样式来控制文字，忽略了cad有多种途径控制文字样式。）</p>
+<p>字体：尽量统一，最多不可超过3种字体，减少图纸大小。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于学习Markdown写作(更新)]]></title>
+        <id>https://lxj5820.github.io/post/003/</id>
+        <link href="https://lxj5820.github.io/post/003/">
+        </link>
+        <updated>2021-07-20T02:57:41.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="认识markdow">认识Markdow</h3>
+<p>Markdown 是一种「标记语言」，通过简单的标记语法，使普通文本内容具有一定的格式。它最大的三个优点是：轻量、简单、通用，当前已经有很多人用它来写博客、写书甚至是写论文。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="认识markdow">认识Markdow</h3>
+<p>Markdown 是一种「标记语言」，通过简单的标记语法，使普通文本内容具有一定的格式。它最大的三个优点是：轻量、简单、通用，当前已经有很多人用它来写博客、写书甚至是写论文。</p>
+<!-- more -->
+<p>它主要的好处有  [^1]  ：<br>
+专注于文字而抛开烦人的排版<br>
+支持各种文本编辑器打开<br>
+轻松转换为html、PDF等格式<br>
+极好的可读性</p>
+<h2 id="基础语法">基础语法</h2>
+<h3 id="标题">标题</h3>
+<p>Markdown支持6种级别的标题，对应html标签 h1 ~ h6</p>
+<pre><code># h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+</code></pre>
+<p>除此之外，Markdown还支持另外一种形式的标题展示形式，其类似于 Setext 标记语言的表现形式，使用下划线进行文本大小的控制</p>
+<pre><code>wqd
+这是一级标题
+===
+这是二级标题
+---
+</code></pre>
+<p>这种处理方式在Github的一些开源工程上面比较常见，显而易见的缺点是：文字大小控制级别有限。</p>
+<h3 id="段落及区块引用">段落及区块引用</h3>
+<p>需要记住的是，Markdown其实就是一种易于编写的普通文本，只不过加入了部分渲染文本的标签而已。其最终依然会转换为html标签，因此使用Markdown分段非常简单，前后至少保留一个空行即可</p>
+<p>而另外一个比较常见的需求就是，我们可能希望对某段文字进行强调处理。Markdown提供了一个特殊符号&gt;用于段首进行强调，被强调的文字部分将会高亮显示</p>
+<pre><code>&gt; 这段文字将被高亮显示...
+</code></pre>
+<h3 id="插入链接或图片">插入链接或图片</h3>
+<p>Markdown针对链接和图片的处理也比较简单，可以使用下面的语法进行标记</p>
+<pre><code>[点击跳转至百度](http://www.baidu.com)
+![图片](https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+</code></pre>
+<blockquote>
+<p>注： 引用图片和链接的唯一区别就是在最前方添加一个感叹号。</p>
+</blockquote>
+<h3 id="列表">列表</h3>
+<p>Markdown支持有序列表和无序列表两种形式：</p>
+<ul>
+<li>无序列表使用*或+或-标识</li>
+<li>有序列表使用数字加.标识，例如：1.</li>
+</ul>
+<pre><code>* 黄瓜
+* 玉米
+* 茄子
+
++ 黄瓜
++ 玉米
++ 茄子
+
+- 黄瓜
+- 玉米
+- 茄子
+
+1. 黄瓜
+2. 玉米
+3. 茄子
+</code></pre>
+<p>注：这里比较有趣的地方是，对于有序列表，Markdown将只关注你的第一个项目的数字编号。例如：如果第一个项目编号是3，以此类推，第二个项目应该是4，最终将显示为3、4、5。而如果你指定了第一个编号，后面的编号指定错误也没有关系，Markdown将只在乎你的第一个项目编号。</p>
+<h4 id="使用列表的一些注意事项">使用列表的一些注意事项</h4>
+<p>如果在单一列表项中包含了多个段落，为了保证渲染正常，*与段落首字母之间必须保留四个空格</p>
+<pre><code>*    段落一
+
+     小段一
+*    段落二
+
+     小段二
+</code></pre>
+<p>另外，如果在列表中加入了区块引用，区域引用标记符也需要缩进4个空格</p>
+<pre><code>* 段落一
+    &gt; 区块标记一
+* 段落二
+    &gt; 区块标记二
+</code></pre>
+<p>注：记住一个原则，如果在和列表配合使用的时候出现了问题，就缩进一次，四个空格或者一个制表符代表一次缩进。如果一次缩进没有解决问题，那就两次。</p>
+<h3 id="分隔线">分隔线</h3>
+<p>有时候，为了排版漂亮，可能会加入分隔线。Markdown加入分隔线非常简单，使用下面任意一种形式都可以</p>
+<pre><code>***
+---
+</code></pre>
+<p>产生分隔线的语法要求比较松，符号之间添加空格也可以。</p>
+<h3 id="强调">强调</h3>
+<p>有时候，我们希望对某一部分文字进行强调，使用*或_包裹即可。使用单一符号标记的效果是斜体，使用两个符号标记的效果是加粗</p>
+<pre><code>*这里是斜体*
+_这里是斜体_
+
+**这里是加粗**
+__这里是加粗__
+</code></pre>
+<p>##高级用法</p>
+<h3 id="插入代码块">插入代码块</h3>
+<p>Markdown在IT圈子里面比较流行的一个重要原因是，它能够轻松漂亮地插入代码。</p>
+<p>方法是，使用反引号进行包裹即可。如果是行内代码引用，使用单个反引号[`]进行包裹</p>
+<p>这是一段  <code>var x = 3</code>  行内代码</p>
+<p>如果插入一整段代码，需要至少使用两个以上反引号进行包裹， 看效果：</p>
+<pre><code>fun (x: Int, y: Int): Int {
+  return x + y
+}
+</code></pre>
+<p>注：很多人不知道怎么输入反引号。在英文模式下，找到键盘最左侧esc键下面的第一个键点击即可。</p>
+<h3 id="插入表格">插入表格</h3>
+<p>表格是Markdown语法中比较复杂的一个，其语法如下：</p>
+<pre><code>表头|条目一|条目二
+:---:|:---:|:---:
+项目|项目一|项目二
+</code></pre>
+<p>以上标记显示效果如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">表头</th>
+<th style="text-align:center">条目一</th>
+<th style="text-align:center">条目二</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">项目</td>
+<td style="text-align:center">项目一</td>
+<td style="text-align:center">项目二</td>
+</tr>
+<tr>
+<td style="text-align:center">注：三个短斜杠左右的冒号用于控制对齐方式，只放置左边冒号表示文字居左，只放置右边冒号表示文字居右，如果两边都放置冒号表示文字居中。</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="其它">其它</h2>
+<h3 id="特殊符号处理">特殊符号处理</h3>
+<p>Markdown使用反斜杠\插入语法中用到的特殊符号。在Markdown中，主要有以下几种特殊符号需要处理：</p>
+<pre><code>\   反斜线
+`   反引号
+*   星号
+_   底线
+{}  花括号
+[]  方括号
+()  括弧
+#   井字号
++   加号
+-   减号
+.   英文句点
+!   惊叹号
+</code></pre>
+<p>例如，如果你需要插入反斜杠，就连续输入两个反斜杠即可：\ =&gt; \ 。</p>
+<p>注：在内容中输入以上特殊符号的时候一定要注意转义，否则将导致内容显示不全，甚至排版混乱。</p>
+<h3 id="如何给文字上色">如何给文字上色</h3>
+<p>使用Markdown的同学最郁闷的地方恐怕就是不能给文字添加颜色了。事实上，Markdown的最初目标就是为纯写作而生的。因此，它并没有考虑文字颜色这一点。所以，单纯使用Markdown设置文字颜色已经做不到了。但你可以这样做：</p>
+<p>先用Markdown编辑完成<br>
+导出为html，在需要上色的部分手动添加标签<code>&lt;font color='#ff0000'&gt;内容&lt;/font&gt;</code>保存即可。</p>
+<h3 id="文字居中">文字居中</h3>
+<p>在Markdown中有时会需要让文字在页面中居中只需要</p>
+<pre><code> &lt;center&gt;这段文字需要居中&lt;/center&gt; 
+</code></pre>
+  <center>这段文字需要居中</center> 
+<h2 id="简单总结">简单总结</h2>
+<p>Markdown是一门比html更简单的标记语言，其主要用于日常写作。最终通过相应的编辑器或者脚本转换成html用于页面渲染。如果你是一个作家，或者是一个程序员，Markdown对你来说是一门必备的技能。掌握Markdown真的很简单，如你所见，这篇文章使用了这么短的篇幅就已经将Markdown的语法全部介绍完了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[华为Watch3 安装第三方应用]]></title>
+        <id>https://lxj5820.github.io/post/I0KmgNU-P/</id>
+        <link href="https://lxj5820.github.io/post/I0KmgNU-P/">
+        </link>
+        <updated>2021-07-19T07:29:09.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="用此方法可以给华为watch安装非官方应用商店的应用">用此方法可以给华为Watch安装非官方应用商店的应用</h2>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="用此方法可以给华为watch安装非官方应用商店的应用">用此方法可以给华为Watch安装非官方应用商店的应用</h2>
+<!-- more -->
+<h1 id="方法一">方法一</h1>
+<p>安装adb工具在命令窗口</p>
+<p>1、adb devices<br>
+<code>打开adb工具</code></p>
+<p>2、adb connect ip地址<br>
+<code>连接手表</code></p>
+<p>3、adb devices<br>
+<code>查看是否安装成功</code></p>
+<p>4、adb shell pm list package<br>
+<code>查找手表应用</code></p>
+<p>5、adb shell pm disable-user com.android.packageinstaller<br>
+<code>关闭安装检测</code></p>
+<p>6、adb install 路径<br>
+<code>安装应用</code></p>
+<p>7、adb shell pm enable com.android.packageinstaller<br>
+<code>恢复安装检测</code></p>
+<h1 id="方法二">方法二</h1>
+<p><a href="https://wwa.lanzoui.com/iB0U2rm0acb">安装工具箱</a><br>
+<a href="https://vincent8623.lanzoui.com/b00zti91i">应用库</a><br>
+<img src="https://lxj5820.github.io/post-images/1626681707698.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[win10任务栏透明【系统自带修改】]]></title>
+        <id>https://lxj5820.github.io/post/HTg_rudee/</id>
+        <link href="https://lxj5820.github.io/post/HTg_rudee/">
+        </link>
+        <updated>2021-07-19T06:22:41.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="不需要下载任何工具即可让win10任务栏透明化">不需要下载任何工具即可让win10任务栏透明化</h2>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="不需要下载任何工具即可让win10任务栏透明化">不需要下载任何工具即可让win10任务栏透明化</h2>
+<!-- more -->
+<pre><code>@echo off
+::CODER BY 吾爱破解-idzyr
+::VERSION 0.0.1
+title=Windows10任务栏透明by吾爱破解-idzyr
+:: 修改窗口大小
+mode con cols=51 lines=16
+:: 备份文件
+set RegName=win10任务栏透明修改前备份
+reg export &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; %RegName%.reg /y 1&gt;nul 2&gt;nul
+echo [color=#999999][size=12px]已为[/size][/color]你本次操作进行了数据备份
+echo 如果修改后造成不可逆后果可以尝试通过备份文件恢复
+echo 双击reg文件导入恢复数据然后重启计算机
+echo 备份文件名称；%RegName%.reg
+echo 所在路径；%cd%
+echo 正在检测环境...
+:: 删除影响任务栏透明的值
+reg query &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v UseOLEDTaskbarTransparency 1&gt;nul 2&gt;nul
+if %errorlevel% == 0 (reg delete &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /f /v UseOLEDTaskbarTransparency 1&gt;nul 2&gt;nul)
+:: 添加或移除任务栏透明值
+reg query &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v TaskbarAcrylicOpacity 1&gt;nul 2&gt;nul
+:: 如果上面命令执行成功返回结果为0那么证明注册表中已经存在改值
+if %errorlevel% == 0 (
+        reg delete &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /f /v TaskbarAcrylicOpacity 1&gt;nul 2&gt;nul
+        echo 任务栏透明已关闭
+        :: 重启任务资源管理器
+        taskkill /f /im explorer.exe 1&gt;nul 2&gt;nul &amp; start explorer) else (
+        reg add &quot;HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&quot; /v TaskbarAcrylicOpacity /t REG_DWORD /d 0x00 2&gt;nul
+        taskkill /f /im explorer.exe 1&gt;nul 2&gt;nul &amp; start explorer
+        echo 再次运行关闭任务栏透明) 
+ 
+echo 按任意键退出
+pause 1&gt;nul 2&gt;nul
+</code></pre>
+<p>1、右键选择<code>个性化</code>，颜色向下滑动，开启<code>透明效果</code>；<br>
+2、按win+R，输入<code>regedit</code>，找到<br>
+注册表定位路径；<br>
+<code>\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</code><br>
+新建值名称；<br>
+<code>TaskbarAcrylicOpacity</code><br>
+数据数值；0<br>
+注：0-255：透明到完全不透明</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[李薛健-简历]]></title>
+        <id>https://lxj5820.github.io/post/jianli/</id>
+        <link href="https://lxj5820.github.io/post/jianli/">
+        </link>
+        <updated>2021-07-12T03:31:29.000Z</updated>
+        <summary type="html"><![CDATA[<center> 一个简单个个人简历 </center>
+]]></summary>
+        <content type="html"><![CDATA[<center> 一个简单个个人简历 </center>
+<!-- more -->
+<p>#联系方式</p>
+<ul>
+<li>电话：17608072609</li>
+<li>Email：lixuejian1112@gmailcom</li>
+<li>微信：lixuejian1112</li>
+<li>QQ:2530759990</li>
+</ul>
+<hr>
+<p>#个人信息</p>
+<ul>
+<li>李薛健/男/2000.11.12</li>
+<li>电子科技大学/计算机专业/</li>
+<li>建筑工程行业从业经验</li>
+<li>机械行业实习经验</li>
+</ul>
+<hr>
+<p>#工作经历</p>
+<ul>
+<li><strong>2019.4-至今</strong>           |         四川三鑫力润建设工程有限公司</li>
+</ul>
+<blockquote>
+<p>熟悉轻钢结构、木结构建筑、模块化建筑结构。<br>
+熟练使用<strong>Auto CAD、Sketch UP、3Ds Max、Revit、天正建筑、Layout、Vertex BD、Adobe Photoshop 、Adobe Illustrator、Enscape、Lumion、Vary、D5、酷家乐等软件</strong><br>
+建筑方案设计 | 建筑结构设计 | 效果图制作 | 施工指导</p>
+<blockquote>
+<p>负责建筑项目的<br>
+客户对接<br>
+方案制作<br>
+效果图制作<br>
+施工图制作<br>
+施工指导<br>
+项目验收<br>
+竣工图制作</p>
+</blockquote>
+</blockquote>
+<ul>
+<li><strong>2019.2-2019.4</strong>            |         四川成都龙泉驿档案局</li>
+</ul>
+<blockquote>
+<p>档案管理，及维护</p>
+<blockquote>
+<p>对纸质档案进行<br>
+编码扫描<br>
+图像处理<br>
+数字化<br>
+归档保存</p>
+</blockquote>
+</blockquote>
+<ul>
+<li><strong>2018.5-2019.1</strong>          |        成都航发机器人有限公司</li>
+</ul>
+<blockquote>
+<p>机械设计、CNC加工中心编程操作加工<br>
+独立对公司专利机器人进行部件优化设计，以及部件的CNC编程和加工<br>
+主要使用SolidWorks进行模型设计，然后使用MasterCAM进行模型的编程设计，再通过法兰克系统加工中心进行部件加工制作。</p>
+</blockquote>
+<hr>
+<h1 id="技能证书">技能证书：</h1>
+<ul>
+<li>驾驶证（C1）</li>
+<li>电工（中级）</li>
+<li>车工（中级）</li>
+<li>建筑安全员B证（项目负责人）</li>
+<li>装饰装修质量员</li>
+<li>资料员<br>
+<a href="https://lxj5820.github.io/post/she-ji-zuo-pin/"><center>设计作品链接</center></a><br>
+<a href="https://lxj5820.github.io/post/ZS/"><center>证书链接</center></a></li>
+</ul>
+<h1 id="主要技能">主要技能：</h1>
+<p>学信网↓<br>
+<font color=#ffffff>https://lxj5820.github.io/post/XXW/</font></p>
+]]></content>
+    </entry>
+</feed>
