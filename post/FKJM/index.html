@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>二维码支付</title>
+    <style>
+      /* 设置二维码图像为居中，并在小屏幕上调整大小 */
+      #qr-code {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+      }
+
+      /* 在大屏幕上调整二维码图像的大小 */
+      @media (min-width: 800px) {
+        #qr-code {
+          max-width: 60%;
+        }
+      }
+
+      p {
+        text-align: center;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      #payment-details {
+        display: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>二维码支付</h1>
+    <p>微信扫描下面的二维码完成您的支付：</p>
+    <img id="qr-code" src="\output\post-images\3051.png">
+    <p>支付宝扫描下面的二维码完成您的支付：</p>
+    <img id="qr-code" src="\output\post-images\3051.png">
+    <p>支付金额：$<span id="amount">0</span></p>
+    <p>支付状态：<span id="status">待定</span></p>
+    <button onclick="openPopupWindow()">立即购买</button>
+    <button type="button" onclick="checkPaymentStatus()">检查支付状态</button>
+    <div id="payment-details">
+      <p>您的付款成功了！</p>
+      <p>付款金额: $<span id="amount">0</span></p>
+      <p>资源链接：<a href="https://search.bilibili.com/all?vt=32032503&keyword=%E5%8E%9F%E7%A5%9E" target="" title="资源链接">资源链接</p>
+    </div>
+
+    
+    <script>   
+    function checkPaymentStatus() {
+      // TODO: Check the payment status with your server or payment provider
+
+      // Update the payment status element
+     document.getElementById("status").innerHTML = "已完成";
+
+      // Show the payment details
+      document.getElementById("payment-details").style.display = "block";
+    }
+    </script>
+  </body>
+</html>
