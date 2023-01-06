@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>证书</title>
- </head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
  <body>
  <div class="zs">    
         <img src="/post-images/zs2.jpg">        
@@ -15,9 +13,35 @@
         <div class="yue">5</div>        
         <div class="ri">19</div>              
         <img class="tupian" src="/post-images/3_202206271205039c68e.jpeg">   
-        <div id="output">
-            <img src="/post-images/3051.png" class="aaa">
-</div>
+<script src="https://davidshimjs.github.io/qrcodejs/qrcode.min.js"></script>
+<div id="qrcode"></div>
+<script>
+    // 创建一个新的 QRCode 实例
+    var qrcode = new QRCode("qrcode", {
+      text: "https://lxj5820.github.io/post/%E8%AF%81%E4%B9%A6/",
+      width: 128,
+      height: 128,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+  <style>
+        #qrcode img {
+            margin: 0px !important;
+            z-index: 999 !important;
+            width: 180px !important;
+            margin-left: -100px !important;
+        }
+  </style>
+  <style>
+    #qrcode {
+    position: absolute;
+    top: 1480px;
+    left: 220px;
+    width: 200px !important;
+    }
+  </style>
 </body>
 <style>
      
@@ -41,7 +65,7 @@
            margin-left: -650px;
         
     }
-    
+        
     .xx{
        position: absolute;
        top: 580px;
@@ -91,13 +115,7 @@
    color: #000;;
         
     }
-    #output{
-       position: absolute;
-   top: 1480px;
-   left: 220px;
-   width: 200px !important;
-    }
-    
+  
     .jigou{
        position: absolute;
        margin-top: 1555px;
@@ -124,11 +142,5 @@
     .ri{
         
         margin-left: 950px;
-    }
-    .aaa{
-        margin: 0px !important;
-   z-index: 999 !important;
-   width: 180px !important;
-   margin-left: -100px !important;
     }
 </style>
