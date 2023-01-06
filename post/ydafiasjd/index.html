@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 我们先进行样式初始化 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        .main{
+            width: 800px;/* 让整个网页只有800宽 */
+            margin: auto;/* 让它水平居中 */
+        }
+        .header,.nav,.container,.footer{
+            /* 这四个盒子都要在左浮动 */
+            float: left;
+            /* 让他们满浏览器 */
+            width: 100%;
+            /* 内边距会影响整个盒子的实际大小，这里有一种方法可以处理，让它不影响 */
+            box-sizing: border-box;/* 就是这句 */
+        }
+        .header{
+            /* 这个是头部的样式 */
+            background: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        .nav{
+            background: #333;
+        }
+        .nav a {
+            color: #fff;
+            padding: 10px 20px ;
+            display: inline-block;/* 让链接以块的形式显示 */
+        }
+        .nav a:hover{
+            background: #bbb;
+            color: #000;
+        }
+        /* 我们让左右两边都固定宽度200 */
+        .lside{
+            width: 200px;
+            float: left;
+        }
+        .rside{
+            width: 200px;
+            float: right;
+        }
+        /* 所有中间栏要加左右边距 */
+        .content{
+            margin: 0px 205px;
+        }
+        /* 添加一个内边距 */
+        .lside,.rside,.content{
+            padding: 5px;
+            box-sizing: border-box;/* 去掉内边距影响 */
+        }
+        .footer{
+            padding: 10px;
+            background: #ccc;
+            text-align: center;
+        }
+        /* 最后加个功能，当浏览宽度小于700时，三个栏进行竖排 */
+        @media screen and (max-width:700px) {
+            .lside,.rside,.content{
+                width: 100%;
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>我是网页的头部</h1>
+            <p>这里主要是放网站的logo或是banner广告</p>
+        </div>
+        <div class="nav">
+            <a href="#">导航项</a>
+            <a href="#">导航项</a>
+            <a href="#">导航项</a>
+            <a href="#">导航项</a>
+            <a href="#">导航项</a>
+        </div>
+        <div class="container">
+            <!-- 主体这里我们要放入三个盒子，分别是左中右,要注意的是我们用margin进行三栏布局中间栏是自适应的，所以中间的栏放在第三个。 -->
+            <div class="lside">
+                <h2>我是左边栏</h2>
+                <p>
+                    我是左边栏的内容我是左边栏的内容我是左边栏的内容
+                    我是左边栏的内容我是左边栏的内容我是左边栏的内容
+                    我是左边栏的内容我是左边栏的内容我是左边栏的内容
+                    我是左边栏的内容我是左边栏的内容我是左边栏的内容
+                    我是左边栏的内容我是左边栏的内容我是左边栏的内容
+                    我是左边栏的内容我是左边栏的内容我是左边栏的内容
+                </p>
+            </div>
+            <div class="rside">
+                <h2>我是右边栏</h2>
+                <p>
+                    我是右边栏的内容我是右边栏的内容我是右边栏的内容
+                    我是右边栏的内容我是右边栏的内容我是右边栏的内容
+                    我是右边栏的内容我是右边栏的内容我是右边栏的内容
+                    我是右边栏的内容我是右边栏的内容我是右边栏的内容
+                    我是右边栏的内容我是右边栏的内容我是右边栏的内容
+                </p>
+            </div>
+            <div class="content">
+                <h2>我是中间栏</h2>
+                <p>
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                    我是中间栏的内容我是中间栏的内容我是中间栏的内容
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>我是网页的底部，主要放版权声明，备案信息，联系方式，友情链接等。</p>
+        </div>
+    </div>
+ </body>
+</html>
