@@ -1,67 +1,79 @@
-<html>
-  <head>
-    <title>二维码支付</title>
-    <style>
-      /* 设置二维码图像为居中，并在小屏幕上调整大小 */
-      #qr-code {
-        display: block;
-        margin: 0 auto;
-        max-width: 80%;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载地址</title>
+</head>
+<body>
 
-      /* 在大屏幕上调整二维码图像的大小 */
-      @media (min-width: 800px) {
-        #qr-code {
-          max-width: 60%;
+    <div class="center">
+        <div id="orderNumber"></div>
+        <div id="txt">
+            <p>
+                ！扫码获取正确密码！
+            </p>
+        </div>
+        <img src="233.png" alt="qrcode" id="qrcode" >
+        <br>
+          <!-- 输入框 -->
+          <input type="text" id="input" placeholder="请输入密码">
+         <!-- 按钮 -->
+        <button onclick="checkCommand()">验证</button>
+          <!-- 消息提示 -->
+        <p id="message"></p>
+          <!-- 隐藏内容 --> 
+        <p id="hidden-content" ><a href="https://lxj5820.github.io/post/%E5%95%86%E5%BA%97/" target="" title="资源链接">资源链接</p>
+      </div>
+      <style>
+        #txt {
+            width: 300px; /* 图片的宽度 */
+            text-align: center; /* 文本居中 */
         }
-      }
 
-      p {
-        text-align: center;
-      }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-      h1{
-        text-align: center;
-      }
+        .center {
+            text-align: center;
+        }
 
-      button {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-      }
+        #qrcode {
+            width: 200px;
+            height: 200px;
+        }
 
-      #payment-details {
-        display: none;
-      }
-
-    </style>
-  </head>
-  <body>
-    <h1>二维码支付</h1>
-    <p>微信扫描下面的二维码完成您的支付：</p>
-    <img id="qr-code" src="/post-images/3051.png">
-    <p>支付宝扫描下面的二维码完成您的支付：</p>
-    <img id="qr-code" src="/post-images/3051.png">
-    <p>支付金额：$<span id="amount">0</span></p>
-    <p>支付状态：<span id="status">待定</span></p>
-    <button type="button" onclick="checkPaymentStatus()">检查支付状态</button>
-    <div id="payment-details">
-      <p>您的付款成功了！</p>
-      <p>付款金额: $<span id="amount">0</span></p>
-      <p>资源链接：<a href="https://search.bilibili.com/all?vt=32032503&keyword=%E5%8E%9F%E7%A5%9E" target="" title="资源链接">资源链接</p>
-    </div>
-
-    
-    <script>   
-    function checkPaymentStatus() {
-      // TODO: Check the payment status with your server or payment provider
-
+        #hidden-content {
+            display: none;
+        }
+      </style>
+      <script>
+                var orderNumber = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+                document.getElementById("orderNumber").innerHTML = "订单号：" + orderNumber;
+        function checkCommand() {
+            var input = document.getElementById("input").value;
+            var message = document.getElementById("message");
+            var hiddenContent = document.getElementById("hidden-content");
+            // 判断输入文本是否正确
+            if (input === "1") {
+                // 输入正确
+                message.innerHTML = "输入正确";
+            hiddenContent.style.display = "block";
+            } else {
+                // 输入错误
+                message.innerHTML = "输入错误";
+                hiddenContent.style.display = "none";
+            }
+        }
+        function checkPaymentStatus() {
       // Update the payment status element
-     document.getElementById("status").innerHTML = "已完成";
-
-      // Show the payment details
-      document.getElementById("payment-details").style.display = "block";
+     document.getElementById("status").innerHTML = "未完成，请稍等";
     }
-    </script>
-  </body>
+      </script>
+</body>
 </html>
