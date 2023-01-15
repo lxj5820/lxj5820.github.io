@@ -159,8 +159,9 @@ footer {
     var left = (screen.width - 400) / 2;
     var top = (screen.height - 400) / 2;
 
-    // Open a new window with the specified URL and position
-    window.open('https://lxj5820.github.io/post/FKJM/', '_blank', 'width=400,height=400,left=' + left + ',top=' + top);
+    function openPopupWindow(productURL) {
+    window.open(productURL, "", "height=500, width=500");
+  }
   }
 </script>
 </body>
