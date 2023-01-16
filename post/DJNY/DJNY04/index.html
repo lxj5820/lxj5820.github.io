@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>待机女友</title>
+    <style>
+        body {
+          margin: 0;
+        }
+
+        header {
+          background-color: #eee;
+          text-align: center;
+        }
+
+        footer button {
+          height: 50px;
+          width: 80px;
+          font-size: 16px;
+        }
+
+        main {
+          height: calc(100vh - 100px); /* 100px is the height of header and footer combined */
+          overflow-y: scroll;
+          text-align: center;
+        }
+
+        footer {
+          background-color: #eee;
+          text-align: center;
+          padding: 10px;
+        }
+
+        #comic-title {
+          margin: 0;
+        }
+
+        #comic-image {
+          max-width: 100%;
+          margin: auto;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="comic-title">待机女友-第4话</h1>
+    </header>
+    <main>
+      <img id="comic-image" src="0001.jpg">
+      <img id="comic-image" src="0002.jpg">
+      <img id="comic-image" src="0003.jpg">
+      <img id="comic-image" src="0004.jpg">
+      <img id="comic-image" src="0005.jpg">
+      <img id="comic-image" src="0006.jpg">
+      <img id="comic-image" src="0007.jpg">
+    </main>
+    <footer>
+      <button id="prev-button">上一话</button>
+      <button id="next-button">下一话</button>
+    </footer>
+    <script>
+        // Listen for the prev button click
+        document.getElementById("prev-button").addEventListener("click", function() {
+          // Change the comic image src to the previous comic
+          window.location.href = "https://lxj5820.github.io/post/DJNY/DJNY03";
+        });
+
+        // Listen for the next button click
+        document.getElementById("next-button").addEventListener("click", function() {
+          // Change the comic image src to the next comic
+          window.location.href = "https://lxj5820.github.io/post/DJNY/DJNY05";
+        });
+        // Listen for screen resize and adjust comic image size accordingly
+        window.addEventListener("resize", function() {
+          // Adjust the comic image size
+        });
+    </script>
+  </body>
+</html>
