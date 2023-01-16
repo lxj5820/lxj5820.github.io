@@ -136,17 +136,16 @@
                         hiddenContent.style.display = "block";
                         // 创建一个XMLHttpRequest对象
                         var xhr = new XMLHttpRequest();
-                        // 打开请求
-                        xhr.open("GET", "./1.xml", true);
-                        // 设置onreadystatechange事件处理程序
+                        xhr.open("GET", "./ziyuanlianjie.xml", true);
                         xhr.onreadystatechange = function() {
                             if (xhr.readyState === 4 && xhr.status === 200) {
                                 var xmlDoc = xhr.responseXML;
+                                var hiddenContent = document.getElementById("hidden-content");
                                 var link = xmlDoc.getElementsByTagName("link")[0].textContent;
                                 hiddenContent.innerHTML = "<a href='" + link + "' target='_blank'>资源链接</a>";
                             }
                         };
-                    xhr.send();
+                        xhr.send();
                     } else {
                     // 输入错误
                     message.innerHTML = "输入错误";
@@ -157,18 +156,6 @@
       // Update the payment status element
      document.getElementById("status").innerHTML = "未完成，请稍等";
     }
-// ---
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "./ziyuanlianjie.xml", true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var xmlDoc = xhr.responseXML;
-                var hiddenContent = document.getElementById("hidden-content");
-                var link = xmlDoc.getElementsByTagName("link")[0].textContent;
-                hiddenContent.innerHTML = "<a href='" + link + "' target='_blank'>资源链接</a>";
-            }
-        };
-        xhr.send();
       </script>
 </body>
 </html>
