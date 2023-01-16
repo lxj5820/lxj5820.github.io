@@ -6,13 +6,16 @@
 <body>
   <header>
     <h1>资源商店</h1>
-    <nav>
+    <nav> 
       <ul>
         <li><a href="https://lxj5820.github.io/">博客</a></li>
         <li><a href="https://lxj5820.github.io/post/商店/">商店</a></li>
       </ul>
     </nav>
   </header>
+  <marquee direction="right" behavior="scroll" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="0" loop="-1" width="" height="30">
+    我是滚动的字幕
+  </marquee>
   <main>
     <section id="featured-products">
       <h2>特色产品</h2>
@@ -84,81 +87,81 @@
     <p>©LXJ</p>
   </footer>
   <style>
-       /* 页眉样式 */
-header {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-    header h1 {
-  margin: 0;
-}
-header h2 {
-  margin: 0;
-  text-align: center;
-}
-header nav {
-  display: flex;
-}
-    header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-    header nav ul li {
-  margin: 0 10px;
-}
-    header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-/* 产品列表样式 */
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-ul li {
-  width: 30%;
-  margin-bottom: 20px;
-}
-ul li img {
-  width: 100%;
-  height: auto;
-}
-ul li h3 {
-  margin: 10px 0;
-}
-ul li p {
-  font-weight: bold;
-  color: #f00;
-}
-ul li button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-/* 页脚样式 */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-</style>
-<script>
-  function openPopupWindow(productURL) {
-    var left = (screen.width - 500) / 2;
-    var top = (screen.height - 500) / 2;
-    window.open(productURL, "", "height=500, width=500, top="+top+", left="+left);
-  }
-</script>
+           /* 页眉样式 */
+    header {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+        header h1 {
+      margin: 0;
+    }
+    header h2 {
+      margin: 0;
+      text-align: center;
+    }
+    header nav {
+      display: flex;
+    }
+        header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+        header nav ul li {
+      margin: 0 10px;
+    }
+        header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    /* 产品列表样式 */
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    ul li {
+      width: 30%;
+      margin-bottom: 20px;
+    }
+    ul li img {
+      width: 100%;
+      height: auto;
+    }
+    ul li h3 {
+      margin: 10px 0;
+    }
+    ul li p {
+      font-weight: bold;
+      color: #f00;
+    }
+    ul li button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    /* 页脚样式 */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <script>
+    function openPopupWindow(productURL) {
+      var left = (screen.width - 500) / 2;
+      var top = (screen.height - 500) / 2;
+      window.open(productURL, "", "height=500, width=500, top="+top+", left="+left);
+    }
+  </script>
 </body>
 </html>
