@@ -9847,8 +9847,8 @@
                             tips: !1
                         }, {
                             avatar: t(4418),
-                            name: "腾讯视频VIP",
-                            msg: "今天！《梦华录》大结局点映礼，主演团陪看",
+                            name: "微信运动",
+                            msg: "[应用消息]",
                             time: z(496e4),
                             tips: !1
                         }, {
@@ -10215,7 +10215,7 @@
                                     children: ["复制下面的链接粘贴到浏览器中打开", (0, R.jsx)("br", {}), "查看使用说明！"]
                                 }), (0, R.jsx)("a", {
                                     onClick: n.copyFn,
-                                    children: "https://blog.itakeo.com/help"
+                                    children: "https://lxj5820.github.io/post/wxjzhelp/"
                                 })]
                             }),
                             button: {
