@@ -9817,8 +9817,8 @@
                         tabActive: 1,
                         list: [{
                             avatar: t(8300),
-                            name: "热心网友",
-                            msg: "上号，上号",
+                            name: "平常心",
+                            msg: "收到",
                             time: z(5e5),
                             tips: !0
                         }, {
