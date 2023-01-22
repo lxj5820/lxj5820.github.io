@@ -1913,8 +1913,9 @@ header div img {
 }
 
 .tab_title {
-    font-size: .3rem;
-    padding: .15rem .31rem
+    font-size: .2rem;
+    padding: .15rem .31rem;
+    color: rgb(107, 107, 107)
 }
 
 .userCell.userCell2 div {
@@ -3191,7 +3192,7 @@ footer .cell:first-child span:after {
 }
 
 .dot:before {
-    left: .18rem
+    left: .18rem;
 }
 
 .momentsRec {
