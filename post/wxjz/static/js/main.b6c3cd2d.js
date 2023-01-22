@@ -11223,6 +11223,14 @@
                                                 className: "icon_bg icon_s2 icon_8"
                                             }), (0, R.jsx)("p", {
                                                 className: "flex-box",
+                                                children: "视频号"
+                                            })]
+                                        }), (0, R.jsxs)("div", {
+                                            className: "userCell borderBottomNone flex-app userCell2",
+                                            children: [(0, R.jsx)("div", {
+                                                className: "icon_bg icon_s2 icon_10"
+                                            }), (0, R.jsx)("p", {
+                                                className: "flex-box",
                                                 children: "直播"
                                             })]
                                         }), (0, R.jsxs)("div", {
@@ -11234,28 +11242,12 @@
                                                 children: "扫一扫"
                                             })]
                                         }), (0, R.jsxs)("div", {
-                                            className: "userCell borderBottomNone flex-app userCell2",
-                                            children: [(0, R.jsx)("div", {
-                                                className: "icon_bg icon_s2 icon_10"
-                                            }), (0, R.jsx)("p", {
-                                                className: "flex-box",
-                                                children: "摇一摇"
-                                            })]
-                                        }), (0, R.jsxs)("div", {
                                             className: "userCell flex-app userCell2 mt10",
                                             children: [(0, R.jsx)("div", {
                                                 className: "icon_bg icon_s2 icon_11"
                                             }), (0, R.jsx)("p", {
                                                 className: "flex-box",
-                                                children: "购物"
-                                            })]
-                                        }), (0, R.jsxs)("div", {
-                                            className: "userCell flex-app userCell2",
-                                            children: [(0, R.jsx)("div", {
-                                                className: "icon_bg icon_s2 icon_12"
-                                            }), (0, R.jsx)("p", {
-                                                className: "flex-box",
-                                                children: "游戏"
+                                                children: "搜一搜"
                                             })]
                                         }), (0, R.jsxs)("div", {
                                             className: "userCell borderBottomNone flex-app userCell2 mt10",
