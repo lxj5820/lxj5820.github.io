@@ -1,11 +1,17 @@
 this.addEventListener('fetch', function (event) {
+	// 监听 fetch 事件
 	event.respondWith(
 		caches.match(event.request).then(res => {
+			// 先在缓存中查找是否有已缓存的请求
 			return res ||
 				fetch(event.request).then(responese => {
+					// 如果缓存中没有，则发起网络请求
 					const responeseClone = responese.clone();
+					// 先克隆一份响应
 					caches.open('sw_demo').then(cache => {
+						// 打开名为 'sw_demo' 的缓存
 						if (responese.url.indexOf('itakeo') > 0) cache.put(event.request, responeseClone);
+						// 如果请求的URL包含 'itakeo' 则将响应存入缓存
 					});
 					return responese;
 				}).catch(err => {
@@ -16,9 +22,12 @@ this.addEventListener('fetch', function (event) {
 });
 
 this.addEventListener('install', function (event) {
+	// 监听 install 事件
 	event.waitUntil(
 		caches.open('sw_demo').then(function (cache) {
+			// 打开名为 'sw_demo' 的缓存
 			return cache.addAll([
+				// 将这些文件加入缓存
 				"./static/media/bg2.b07b4fbdbcf36617c19e.jpg",
 				"./static/media/iconSprites.de48f4a5f2ef69c94df0.png",
 				"./static/media/3.17f7af737f9602a49dd8.jpg",
