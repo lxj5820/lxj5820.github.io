@@ -10246,7 +10246,7 @@
                                     children: ["复制下面的链接粘贴到浏览器中打开", (0, R.jsx)("br", {}), "查看使用说明！"]
                                 }), (0, R.jsx)("a", {
                                     onClick: n.copyFn,
-                                    children: "https://lxj5820.github.io/post/wxjzhelp/"
+                                    children: "lxj5820.github.io/post/wxjzhelp/"
                                 })]
                             }),
                             button: {
@@ -10569,7 +10569,7 @@
                     }, n.copyFn = function (A) {
                         window.getSelection().removeAllRanges();
                         var e = document.createElement("input");
-                        e.className = "copyLinkBox", e.disabled = !0, e.value = "https://blog.itakeo.com/help", document.body.appendChild(e), e.select();
+                        e.className = "copyLinkBox", e.disabled = !0, e.value = "https://lxj5820.github.io/post/wxjzhelp/", document.body.appendChild(e), e.select();
                         var t = document.createRange();
                         t.selectNode(e), window.getSelection().addRange(t), e.setSelectionRange(0, e.value.length), document.execCommand("Copy"), window.getSelection().removeAllRanges(), e.remove(), F("复制成功", 1800)
                     }, n.PickerDialogFn = function () {
