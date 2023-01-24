@@ -10258,6 +10258,39 @@
                                 }
                             }
                         })
+                    }, n.editBgImgFn = function () {
+                        y({
+                            title: "修改背景图片",
+                            addClass: "editBgImg",
+                            content: (0, R.jsxs)("div", {
+                                className: "editBgWrap",
+                                style: {
+                                    background: "url(".concat(r.state.defaultBgImg, ") center / cover no-repeat")
+                                },
+                                children: [(0, R.jsx)("label", {
+                                    htmlFor: "bgimg",
+                                    children: "点击这里选择背景图片"
+                                }), (0, R.jsx)("input", {
+                                    type: "file",
+                                    name: "bgimg",
+                                    id: "bgimg",
+                                    "data-type": "bgimg",
+                                    onChange: r.PreviewImage
+                                })]
+                            }),
+                            button: {
+                                "取消": function (A) {
+                                    A.close()
+                                },
+                                "修改": function (A) {
+                                    r.setState({
+                                        bgImg: r.state.defaultBgImg
+                                    }, (function () {
+                                        A.close()
+                                    }))
+                                }
+                            }
+                        })
                     }, n.tabClick = function (A) {
                         n.setState({
                             tabActive: +A.target.dataset.index + 1
