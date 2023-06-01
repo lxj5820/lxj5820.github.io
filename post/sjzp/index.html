@@ -38,11 +38,16 @@
             margin-top: 0;
         }
 
-        img {
+        .image-container {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .image-container img {
             max-width: 100%;
             height: auto;
-            display: block;
-            margin-bottom: 10px;
+            display: inline-block;
+            margin-right: 10px;
             border-radius: 5px;
         }
 
@@ -67,16 +72,41 @@
 
     <main>
         <section>
-            <h2>项目一</h2>
-            <img src="path/to/project1-image.jpg" alt="项目一">
+            <h2>室内平面图</h2>
+            <div class="image-container">
+                <img src="/post-images/SJZP (1).png" alt="彩平图">
+                <img src="/post-images/SJZP (2).png" alt="彩平图">
+            </div>
             <p>项目描述：这是项目一的描述。</p>
         </section>
 
         <section>
-            <h2>项目二</h2>
-            <img src="path/to/project2-image.jpg" alt="项目二">
-            <p>项目描述：这是项目二的描述。</p>
+            <h2>轻钢结构建筑</h2>
+            <div class="image-container">
+                <img src="/post-images/1626061253973.png" alt="项目三">
+                <img src="/post-images/1626061274513.png" alt="项目三">
+                <img src="/post-images/1626061295430.png" alt="项目三">
+            </div>
+            <p>项目描述：这是使用vertexBD制作的轻钢结构建筑模型，可以直接用于生产</p>
         </section>
+
+        <section>
+            <h2>室内效果图</h2>
+            <div class="image-container">
+                <img src="/post-images/mmexport1661753887824.jpg" alt="室内效果图">
+                <img src="/post-images/mmexport1664092500979.jpg" alt="室内效果图">
+            </div>
+            <p>项目描述：这是使用sketchup和enscape制作的室内效果图</p>
+        </section>
+
+        <section>
+            <h2>景观鸟瞰图</h2>
+            <div class="image-container">
+                <img src="/post-images/13cf9fbb791ff2136b194bf9c762494.jpg" alt="景观鸟瞰图">
+            </div>
+            <p>项目描述：这是使用D5制作的鸟瞰效果图，烧烤营地</p>
+        </section>
+
 
         <!-- 添加更多项目的区块 -->
     </main>
