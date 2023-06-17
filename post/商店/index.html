@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Online Store【测试】</title>
 </head>
+
 <body>
   <header>
     <h1>资源商店</h1>
-    <nav> 
+    <nav>
       <ul>
         <li><a href="https://lxj5820.github.io/">博客</a></li>
         <li><a href="https://lxj5820.github.io/post/商店/">商店</a></li>
       </ul>
     </nav>
   </header>
-  <marquee direction="right" behavior="scroll" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="0" loop="-1" width="" height="30">
+  <marquee direction="right" behavior="scroll" scrollamount="1" onmouseover="this.stop();" onmouseout="this.start();"
+    scrolldelay="0" loop="-1" width="" height="30">
     我是滚动的字幕
   </marquee>
   <main>
@@ -22,39 +25,39 @@
       <ul>
         <li>
           <img src="product1.png" alt="Product 1">
-          <h3>SU万能插件库材</h3>
-          <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY1')"> 立即购买</button>
+          <h3>SU建模</h3>
+          <p>¥:500</p>
+          <button onclick="openPopupWindow('/post/FKJM/ZY1')"> 立即购买</button>
         </li>
         <li>
           <img src="product2.png" alt="Product 2">
           <h3>城市设计效果图psd文本及竞赛展板大礼包</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY2')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY2')"> 立即购买</button>
         </li>
         <li>
           <img src="product3.png" alt="Product 3">
           <h3>全新竞赛风精选彩色平面图植物PSD合集 建筑景观高端竞赛风源文件</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY3')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY3')"> 立即购买</button>
         </li>
         <li>
           <img src="product3.png" alt="Product 4">
           <h3>全新竞赛风精选彩色平面图植物PSD合集 建筑景观高端竞赛风源文件</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY4')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY4')"> 立即购买</button>
         </li>
         <li>
           <img src="product3.png" alt="Product 5">
           <h3>全新竞赛风精选彩色平面图植物PSD合集 建筑景观高端竞赛风源文件</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY6')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY6')"> 立即购买</button>
         </li>
         <li>
           <img src="product3.png" alt="Product 6">
           <h3>全新竞赛风精选彩色平面图植物PSD合集 建筑景观高端竞赛风源文件</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY6')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY6')"> 立即购买</button>
         </li>
       </ul>
     </section>
@@ -65,19 +68,19 @@
           <img src="product4.png" alt="Product 7">
           <h3>一键生成城市配景简模神器+城市SU体块模型合集</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY4')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY4')"> 立即购买</button>
         </li>
         <li>
           <img src="product5.png" alt="Product 8">
           <h3>CAD动态块图库</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY5')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY5')"> 立即购买</button>
         </li>
         <li>
           <img src="product6.jpg" alt="Product 9">
           <h3>CAD万能字体浓缩版</h3>
           <p>免费</p>
-          <button onclick="openPopupWindow('https://lxj5820.github.io/post/FKJM/ZY6')"> 立即购买</button>
+          <button onclick="openPopupWindow('/post/FKJM/ZY6')"> 立即购买</button>
         </li>
       </ul>
     </section>
@@ -87,7 +90,7 @@
     <p>©LXJ</p>
   </footer>
   <style>
-           /* 页眉样式 */
+    /* 页眉样式 */
     header {
       background-color: #333;
       color: #fff;
@@ -96,50 +99,62 @@
       align-items: center;
       padding: 20px;
     }
-        header h1 {
+
+    header h1 {
       margin: 0;
     }
+
     header h2 {
       margin: 0;
       text-align: center;
     }
+
     header nav {
       display: flex;
     }
-        header nav ul {
+
+    header nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
     }
-        header nav ul li {
+
+    header nav ul li {
       margin: 0 10px;
     }
-        header nav ul li a {
+
+    header nav ul li a {
       color: #fff;
       text-decoration: none;
     }
+
     /* 产品列表样式 */
     ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
     ul li {
       width: 30%;
       margin-bottom: 20px;
     }
+
     ul li img {
       width: 100%;
       height: auto;
     }
+
     ul li h3 {
       margin: 10px 0;
     }
+
     ul li p {
       font-weight: bold;
       color: #f00;
     }
+
     ul li button {
       background-color: #333;
       color: #fff;
@@ -148,6 +163,7 @@
       font-size: 16px;
       cursor: pointer;
     }
+
     /* 页脚样式 */
     footer {
       background-color: #333;
@@ -160,8 +176,9 @@
     function openPopupWindow(productURL) {
       var left = (screen.width - 500) / 2;
       var top = (screen.height - 500) / 2;
-      window.open(productURL, "", "height=500, width=500, top="+top+", left="+left);
+      window.open(productURL, "", "height=500, width=500, top=" + top + ", left=" + left);
     }
   </script>
 </body>
+
 </html>
