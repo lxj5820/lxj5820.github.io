@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>下载地址</title>
 </head>
+
 <body>
 
+    <!-- 一个居中的容器 -->
     <div class="center">
+        <!-- 订单号显示区域 -->
         <div id="orderNumber"></div>
+        <!-- 提示文本 -->
         <div id="txt">
             <p>
                 ↑密码就是订单号↑
             </p>
         </div>
-        <img src="000.png" alt="qrcode" id="qrcode" >
+        <!-- 二维码图片 -->
+        <img src="000.png" alt="qrcode" id="qrcode">
         <br>
-          <!-- 输入框 -->
-          <input type="text" id="input" placeholder="请输入密码">
-         <!-- 按钮 -->
+        <!-- 输入框 -->
+        <input type="text" id="input" placeholder="请输入密码">
+        <!-- 验证按钮 -->
         <button onclick="checkCommand()">验证</button>
-          <!-- 消息提示 -->
+        <!-- 消息提示 -->
         <p id="message"></p>
-          <!-- 隐藏内容 --> 
-        <p id="hidden-content" ></p>
-      </div>
+        <!-- 隐藏内容 -->
+        <p id="hidden-content"></p>
+    </div>
 
-      <style type="text/css">
-        *{margin:0;padding:0;}
-        body{background:black;}
-        canvas{
-            position:absolute;
-            display:block;
-            z-index:-1;
+    <!-- 设置背景样式 -->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: black;
+        }
+
+        canvas {
+            position: absolute;
+            display: block;
+            z-index: -1;
         }
     </style>
 
-      <style>
+    <!-- 设置文本和布局样式 -->
+    <style>
         #txt {
-            color:#ffffff;/*设置文字颜色*/
-            font-family:"HYYaKuHeiW";/*设置字体*/
-            width: 300px; /* 图片的宽度 */
-            text-align: center; /* 文本居中 */
+            color: #ffffff;
+            /*设置文字颜色*/
+            font-family: "HYYaKuHeiW";
+            /*设置字体*/
+            width: 300px;
+            /* 图片的宽度 */
+            text-align: center;
+            /* 文本居中 */
             font-family: Arial;
         }
 
-        #orderNumber{
-            color:#ffffff;/*设置文字颜色*/
-            font-family:"HYYaKuHeiW";/*设置字体*/
+        #orderNumber {
+            color: #ffffff;
+            /*设置文字颜色*/
+            font-family: "HYYaKuHeiW";
+            /*设置字体*/
         }
 
         body {
@@ -58,9 +79,11 @@
             height: 100vh;
         }
 
-        #message{
-            color:#ffffff;/*设置文字颜色*/
-            font-family:"HYYaKuHeiW";/*设置字体*/
+        #message {
+            color: #ffffff;
+            /*设置文字颜色*/
+            font-family: "HYYaKuHeiW";
+            /*设置字体*/
         }
 
         .center {
@@ -75,92 +98,97 @@
         #hidden-content {
             display: none;
         }
-      </style>
-        <script>
-            document.onkeydown = function () {
-                if (window.event && window.event.keyCode == 123) {
-                    alert("F12被禁用");
-                    event.keyCode = 0;
-                    event.returnValue = false;
-                }
-                if (window.event && window.event.keyCode == 13) {
-                    window.event.keyCode = 505;
-                }
-                if (window.event && window.event.keyCode == 8) {
-                    alert(str + "\n请使用Del键进行字符的删除操作！");
-                    window.event.returnValue = false;
-                }
+    </style>
+
+    <!-- 禁用F12，右键和退格键 -->
+    <script>
+        document.onkeydown = function () {
+            if (window.event && window.event.keyCode == 123) {
+                alert("F12被禁用");
+                event.keyCode = 0;
+                event.returnValue = false;
             }
-            
-            document.oncontextmenu = function (event) {
-                if (window.event) {
-                    event = window.event;
-                }
-                try {
-                    var the = event.srcElement;
-                    if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
-                        return false;
-                    }
-                    return true;
-                } catch (e) {
+            if (window.event && window.event.keyCode == 13) {
+                window.event.keyCode = 505;
+            }
+            if (window.event && window.event.keyCode == 8) {
+                alert(str + "\n请使用Del键进行字符的删除操作！");
+                window.event.returnValue = false;
+            }
+        }
+
+        document.oncontextmenu = function (event) {
+            if (window.event) {
+                event = window.event;
+            }
+            try {
+                var the = event.srcElement;
+                if (!((the.tagName == "INPUT" && the.type.toLowerCase() == "text") || the.tagName == "TEXTAREA")) {
                     return false;
                 }
+                return true;
+            } catch (e) {
+                return false;
             }
+        }
 
-        </script>
-        <canvas id="c"></canvas>
-        <script type="text/javascript">
-            var c=document.getElementById("c");
-            var ctx= c.getContext("2d");
-            c.height=window.innerHeight;
-            c.width=window.innerWidth;
-            var chinese="010110";
-            chinese=chinese.split("");
-            var font_size=10;
-            var columns=c.width/font_size;
-            var drops=[];
-            for(var i=0;i<columns;i++)drops[i]=1;
-            function draw(){ctx.fillStyle="rgba(0,0,0,0.05)";ctx.fillRect(0,0,c.width,c.height);ctx.fillStyle="#0F0";ctx.font=font_size+"px arial";for(var i=0;i<drops.length;i++){var text=chinese[Math.floor
-            (Math.random()*chinese.length)];
-            ctx.fillText(text,i*font_size,drops[i]*font_size);
-            if(drops[i]*font_size>c.height&&Math.random()>0.975)drops[i]=0;drops[i]++;}
+    </script>
+    <!-- 设置背景动画效果 -->
+    <canvas id="c"></canvas>
+    <script type="text/javascript">
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+        var chinese = "010110";
+        chinese = chinese.split("");
+        var font_size = 10;
+        var columns = c.width / font_size;
+        var drops = [];
+        for (var i = 0; i < columns; i++)drops[i] = 1;
+        function draw() {
+            ctx.fillStyle = "rgba(0,0,0,0.05)"; ctx.fillRect(0, 0, c.width, c.height); ctx.fillStyle = "#0F0"; ctx.font = font_size + "px arial"; for (var i = 0; i < drops.length; i++) {
+                var text = chinese[Math.floor
+                    (Math.random() * chinese.length)];
+                ctx.fillText(text, i * font_size, drops[i] * font_size);
+                if (drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0; drops[i]++;
             }
-            setInterval(draw,50);
-        </script>
-      <script>
-                var orderNumber = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-                document.getElementById("orderNumber").innerHTML = "订单号：" + orderNumber;
-                function checkCommand() {
-                    var input = document.getElementById("input").value;
-                    var message = document.getElementById("message");
-                    var hiddenContent = document.getElementById("hidden-content");
-                    // 检查输入是否与订单号匹配
-                    if (input === orderNumber) {
-                        // 输入正确
-                        message.innerHTML = "输入正确";
-                        hiddenContent.style.display = "block";
-                        // 创建一个XMLHttpRequest对象
-                        var xhr = new XMLHttpRequest();
-                        xhr.open("GET", "./ziyuanlianjie.xml", true);
-                        xhr.onreadystatechange = function() {
-                            if (xhr.readyState === 4 && xhr.status === 200) {
-                                var xmlDoc = xhr.responseXML;
-                                var hiddenContent = document.getElementById("hidden-content");
-                                var link = xmlDoc.getElementsByTagName("link")[0].textContent;
-                                hiddenContent.innerHTML = "<a href='" + link + "' target='_blank'>资源链接</a>";
-                            }
-                        };
-                        xhr.send();
-                    } else {
-                    // 输入错误
-                    message.innerHTML = "输入错误";
-                    hiddenContent.style.display = "none";
-                    }      
-                }   
-        function checkPaymentStatus() {
-      // Update the payment status element
-     document.getElementById("status").innerHTML = "未完成，请稍等";
-    }
-      </script>
+        }
+        setInterval(draw, 50);
+    </script>
+
+    <!-- 验证输入是否正确，并加载资源链接 -->
+    <script>
+        var orderNumber = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+        document.getElementById("orderNumber").innerHTML = "订单号：" + orderNumber;
+        function checkCommand() {
+            var input = document.getElementById("input").value;
+            var message = document.getElementById("message");
+            var hiddenContent = document.getElementById("hidden-content");
+            // 检查输入是否与订单号匹配
+            if (input === orderNumber) {
+                // 输入正确
+                message.innerHTML = "输入正确";
+                hiddenContent.style.display = "block";
+                // 创建一个XMLHttpRequest对象
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "./ziyuanlianjie.xml", true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        var xmlDoc = xhr.responseXML;
+                        var hiddenContent = document.getElementById("hidden-content");
+                        var link = xmlDoc.getElementsByTagName("link")[0].textContent;
+                        hiddenContent.innerHTML = "<a href='" + link + "' target='_blank'>资源链接</a>";
+                    }
+                };
+                xhr.send();
+            } else {
+                // 输入错误
+                message.innerHTML = "输入错误";
+                hiddenContent.style.display = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
