@@ -8,7 +8,7 @@
   <meta name="keywords" content="物理学圣剑">
   <meta name="description" content="记录生活，提升自我">
   <meta name="theme-color" content="#000">
-  <title>物理学圣剑</title>
+  <title>13个建筑设计中常用的剖面设计手法 | 物理学圣剑</title>
   <link rel="shortcut icon" href="/favicon.ico?v=1687696526308">
   <link rel="stylesheet" href="/styles/main.css">
   <link rel="stylesheet" href="/media/css/gemini.css">
@@ -38,6 +38,8 @@
     })();
   </script>
 
+  <meta name="description" content="13个建筑设计中常用的剖面设计手法" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -73,7 +75,7 @@
 
 
 
-              <li class="nav-item nav-item-active">
+              <li class="nav-item ">
 
 
                 <a href="/" target="_self">
@@ -177,862 +179,295 @@
 
     <div class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
 
-          <div class="sidebar-wrapper box-shadow-wrapper bg-color">
-            <div class="sidebar-item">
-              <img class="site-author-image right-motion" src="/images/avatar.png" />
-              <p class="site-author-name">李薛健</p>
 
-              <div class="site-description right-motion">
+        <div class="sidebar">
 
-                <p id="binft">
-                  物理学圣剑是一种传说中的神器，它是由物理学家们精心制作而成，拥有无比强大的力量。据说，这把圣剑能够掌控时空的流动，从而创造出各种奇妙的现象。有些人甚至相信，物理学圣剑能够改变宇宙的运行规律，让一切事物都按照人类的意愿而发生。然而，由于物理学圣剑的力量太过强大，很少有人能够真正掌握它。因此，物理学圣剑也被称为“不可捉摸的神器”
-                </p>
+          <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
 
-              </div>
-
-            </div>
-            <div class="sidebar-item side-item-stat right-motion">
-              <div class="sidebar-item-box">
-                <a href="/archives/">
-
-                  <span class="site-item-stat-count">44</span>
-                  <span class="site-item-stat-name">文章</span>
-                </a>
-              </div>
-              <div class="sidebar-item-box">
-                <a href="">
-                  <span class="site-item-stat-count">11</span>
-                  <span class="site-item-stat-name">分类</span>
-                </a>
-              </div>
-              <div class="sidebar-item-box">
-                <a href="/tags/">
-                  <span class="site-item-stat-count">11</span>
-                  <span class="site-item-stat-name">标签</span>
-                </a>
+            <div class="post-list-sidebar">
+              <div class="sidebar-title">
+                <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+                <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
               </div>
             </div>
 
-
-            <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
-            </div>
+            <div class="sidebar-body gemini" id="sidebar_body">
 
 
 
-            <div class="sidebar-item sidebar-item-social">
-              <div class="social-item">
+              <div class="sidebar-wrapper box-shadow-wrapper bg-color">
+                <div class="sidebar-item">
+                  <img class="site-author-image right-motion" src="/images/avatar.png" />
+                  <p class="site-author-name">李薛健</p>
+
+                  <div class="site-description right-motion">
+
+                    <p id="binft">
+                      物理学圣剑是一种传说中的神器，它是由物理学家们精心制作而成，拥有无比强大的力量。据说，这把圣剑能够掌控时空的流动，从而创造出各种奇妙的现象。有些人甚至相信，物理学圣剑能够改变宇宙的运行规律，让一切事物都按照人类的意愿而发生。然而，由于物理学圣剑的力量太过强大，很少有人能够真正掌握它。因此，物理学圣剑也被称为“不可捉摸的神器”
+                    </p>
+
+                  </div>
+
+                </div>
+                <div class="sidebar-item side-item-stat right-motion">
+                  <div class="sidebar-item-box">
+                    <a href="/archives/">
+
+                      <span class="site-item-stat-count">44</span>
+                      <span class="site-item-stat-name">文章</span>
+                    </a>
+                  </div>
+                  <div class="sidebar-item-box">
+                    <a href="">
+                      <span class="site-item-stat-count">11</span>
+                      <span class="site-item-stat-name">分类</span>
+                    </a>
+                  </div>
+                  <div class="sidebar-item-box">
+                    <a href="/tags/">
+                      <span class="site-item-stat-count">11</span>
+                      <span class="site-item-stat-name">标签</span>
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+                </div>
 
 
 
-                <a class="social-img" href="#">
-                  <img src="" />
-                  <i class="fa fa-globe" title=""></i>
-                </a>
+                <div class="sidebar-item sidebar-item-social">
+                  <div class="social-item">
+
+
+
+                    <a class="social-img" href="#">
+                      <img src="" />
+                      <i class="fa fa-globe" title=""></i>
+                    </a>
+
+
+                  </div>
+                </div>
+
 
 
               </div>
+
+
             </div>
-
-
-
           </div>
+
         </div>
         <script>
-          let sidebarMeta = document.querySelector('#sidebarMeta');
-          let scheme = 'gemini';
-          let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-          if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-            document.addEventListener('scroll', function (e) {
-              if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-                sidebarWrapper.classList.add('home-sidebar-fixed')
-              } else {
-                sidebarWrapper.classList.remove('home-sidebar-fixed')
+          const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+          const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+          const SLIDE_UP_IN = 'slide-up-in';
+
+          let sidebar = document.querySelector('#sidebar'),
+            tocSideBar = document.querySelector('#tocSideBar'),
+            metaSideBar = document.querySelector('#metaSideBar'),
+            postToc = document.querySelector('#post_toc'),
+            postSiteMeta = document.querySelector('#post_side_meta'),
+            sidebarTitle = document.querySelector('.sidebar-title'),
+            sidebarBody = document.querySelector('#sidebar_body');
+
+          tocSideBar && tocSideBar.addEventListener('click', (e) => {
+            toggleSidebar(e);
+          });
+
+          metaSideBar && metaSideBar.addEventListener('click', (e) => {
+            toggleSidebar(e);
+          });
+
+          function toggleSidebar(e) {
+            let currentTitle = document.querySelector("." + SIDEBAR_TITLE_ACTIVE);
+            if (currentTitle == e.srcElement) {
+              return;
+            }
+            let current, showElement, hideElement;
+            if (e.srcElement == metaSideBar) {
+              showElement = postSiteMeta;
+              hideElement = postToc;
+            } else if (e.srcElement == tocSideBar) {
+              showElement = postToc;
+              hideElement = postSiteMeta;
+            }
+            currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+            e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+            window.Velocity(hideElement, 'stop');
+            window.Velocity(hideElement, 'transition.slideUpOut', {
+              display: 'none',
+              duration: 200,
+              complete: function () {
+                window.Velocity(showElement, 'transition.slideDownIn', {
+                  duration: 200
+                });
               }
-            });
+            })
+            hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+            showElement.classList.add(SIDEBAR_BODY_ACTIVE);
           }
+
+          postToc && postToc.addEventListener('transitionend', function () {
+            this.classList.remove(SLIDE_UP_IN);
+          });
+
+          if (sidebarBody) {
+            if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+              let hasFix = false;
+              let scrollEl = document.querySelector('.main-continer');
+              let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+              window.addEventListener('scroll', function (e) {
+                if (document.scrollingElement.scrollTop >= limitTop) {
+                  if (!hasFix) {
+                    sidebar.classList.add('sidebar-fixed');
+                    hasFix = true;
+                  }
+                } else {
+                  if (hasFix) {
+                    sidebar.classList.remove('sidebar-fixed');
+                    hasFix = false;
+                  }
+                }
+              });
+            }
+          }
+
         </script>
-        <div class="section-box gemini">
-          <section class="section  posts-expand slide-down-in">
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+              <h1 class="post-title">
+                <a class="post-title-link" href="/post/7GDP70IHC/">
+                  13个建筑设计中常用的剖面设计手法
+                </a>
+              </h1>
+              <div class="post-meta">
 
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/7GDP70IHC/">
-                      13个建筑设计中常用的剖面设计手法
-                    </a>
-                  </h1>
-                  <div class="post-meta">
+                <span class="meta-item pc-show">
+                  <i class="fa fa-calendar-o"></i>
+                  <span>发布于</span>
+                  <span>2023-06-25</span>
+                  <span class="post-meta-divider pc-show">|</span>
+                </span>
 
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-06-25</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>0分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>0<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
+                <span class="meta-item">
+                  <i class="fa fa-clock-o"></i>
+                  <span>0分钟</span>
+                </span>
+                <span class="meta-item">
+                  <span class="post-meta-divider">|</span>
+                  <i class="fa fa-file-word-o"></i>
+                  <span>0<span class="pc-show">字数</span></span>
+                </span>
 
 
 
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/7GDP70IHC/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
+                <span id="/post/7GDP70IHC/" data-flag-title="13个建筑设计中常用的剖面设计手法"
+                  class="meta-item pc-show leancloud_visitors">
+                  <span class="post-meta-divider">|</span>
+                  <i class="fa fa-eye"></i>
+                  <span>浏览量：<span class="leancloud-visitors-count"></span></span>
+                </span>
 
               </div>
-            </article>
+            </header>
+            <div class="post-body next-md-body" id="post_body">
+              <p><img src="/post-images/1687696495543.png" alt="" loading="lazy"><br>
+                <img src="/post-images/1687696499733.png" alt="" loading="lazy"><br>
+                <img src="/post-images/1687696503381.png" alt="" loading="lazy"><br>
+                <img src="/post-images/1687696508196.png" alt="" loading="lazy"><br>
+                <img src="/post-images/1687696511696.png" alt="" loading="lazy"><br>
+                <img src="/post-images/1687696515647.png" alt="" loading="lazy">
+              </p>
 
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/3eT2ceCcO/">
-                      10个建筑设计中常用的屋顶设计手法
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-06-25</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>0分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>0<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/3eT2ceCcO/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/FHSvFz5DN/">
-                      10个建筑设计中常用的楼梯设计手法
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-06-25</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>0分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>0<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/FHSvFz5DN/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/5zIyJBYF4/">
-                      Auto CAD 2024简体中文
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-06-25</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-folder-o"></i>
-                      <span class="pc-show">分类于</span>
-
-
-                      <a href="/tag/t8XeS_4vH/">
-                        <span>黑科技</span>
-                      </a>、
-
-
-
-                      <a href="/tag/rDWE7gCXf/">
-                        <span>CAD</span>
-                      </a>、
-
-
-
-                      <a href="/tag/YGlNDw4rT/">
-                        <span>学习</span>
-                      </a>、
-
-
-
-                      <a href="/tag/7OSdsnEIr/">
-                        <span>物理学圣剑</span>
-                      </a>
-
-
-                    </span>
-                    <span class="post-meta-divider">|</span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>1分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>180<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/5zIyJBYF4/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/UZN8udmj5/">
-                      Clash For Android 教程
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-01-28</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-folder-o"></i>
-                      <span class="pc-show">分类于</span>
-
-
-                      <a href="/tag/ZpRnCDYwf/">
-                        <span>教程</span>
-                      </a>
-
-
-                    </span>
-                    <span class="post-meta-divider">|</span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>2分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>351<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/UZN8udmj5/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/wxjzhelp/">
-                      集赞【使用说明】
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-01-21</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-folder-o"></i>
-                      <span class="pc-show">分类于</span>
-
-
-                      <a href="/tag/ZpRnCDYwf/">
-                        <span>教程</span>
-                      </a>
-
-
-                    </span>
-                    <span class="post-meta-divider">|</span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>8分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>2021<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/wxjzhelp/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/ZQmzP-1Qf/">
-                      完整的网页布局，一张完整的网页结构，网页设计与制作，网页制作，网页设计
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-01-06</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>5分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>1132<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/ZQmzP-1Qf/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/R6aRKL82d/">
-                      layout案例
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2023-01-05</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>0分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>0<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/R6aRKL82d/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/商店/">
-                      Online Store【在线商店】
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2022-12-30</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-folder-o"></i>
-                      <span class="pc-show">分类于</span>
-
-
-                      <a href="/tag/t8XeS_4vH/">
-                        <span>黑科技</span>
-                      </a>
-
-
-                    </span>
-                    <span class="post-meta-divider">|</span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>2分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>312<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/商店/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/DtgevciYD/">
-                      win11升级
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2021-11-03</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>2分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>296<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/DtgevciYD/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/JEhrV2wkk/">
-                      CAD崩溃补救
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2021-09-28</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-folder-o"></i>
-                      <span class="pc-show">分类于</span>
-
-
-                      <a href="/tag/rDWE7gCXf/">
-                        <span>CAD</span>
-                      </a>
-
-
-                    </span>
-                    <span class="post-meta-divider">|</span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>1分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>242<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-                  <p>图画好了，突然来个拉闸限电或者软件崩溃，图还没保存，是不是崩溃？<br>
-                    不要怕，做好以下这点随时拉闸限电。</p>
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/JEhrV2wkk/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/pJSoxwpJb/">
-                      Windows10系统简介(1)——版本/更新/代号介绍
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2021-09-27</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-folder-o"></i>
-                      <span class="pc-show">分类于</span>
-
-
-                      <a href="/tag/78rqiTgKQ/">
-                        <span>win10</span>
-                      </a>、
-
-
-
-                      <a href="/tag/7OSdsnEIr/">
-                        <span>物理学圣剑</span>
-                      </a>
-
-
-                    </span>
-                    <span class="post-meta-divider">|</span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>5分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>1292<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-                  <p>Windows10到底有几个版本？每个版本的区别是什么？估计在网上搜索之后，也不太容易找到完整的答案。Windows10总共有12个版本。</p>
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/pJSoxwpJb/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="post-list-box  post box-shadow-wrapper">
-              <div class="article-wrapper bg-color">
-                <header class="post-header">
-                  <h1 class="post-title">
-                    <a class="post-title-link" href="/post/qubie/">
-                      CAD中SHX和TTF字体的优劣势对比和分别适用的地方
-                    </a>
-                  </h1>
-                  <div class="post-meta">
-
-                    <span class="meta-item pc-show">
-                      <i class="fa fa-calendar-o"></i>
-                      <span>发布于</span>
-                      <span>2021-08-28</span>
-                      <span class="post-meta-divider pc-show">|</span>
-                    </span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-folder-o"></i>
-                      <span class="pc-show">分类于</span>
-
-
-                      <a href="/tag/rDWE7gCXf/">
-                        <span>CAD</span>
-                      </a>
-
-
-                    </span>
-                    <span class="post-meta-divider">|</span>
-
-                    <span class="meta-item">
-                      <i class="fa fa-clock-o"></i>
-                      <span>2分钟</span>
-                    </span>
-                    <span class="meta-item">
-                      <span class="post-meta-divider">|</span>
-                      <i class="fa fa-file-word-o"></i>
-                      <span>535<span class="pc-show">字数</span></span>
-                    </span>
-
-                  </div>
-                </header>
-                <div class="post-body">
-
-
-
-                  <h4 id="定义">定义：</h4>
-                  <p>何为SHX字体？何为TTF字体？<br>
-                    简单来说，SHX字体为cad本身自带字体，TTF字体为操作系统自带字体。<br>
-                    其中SHX字体分为两种：字形和符号形。<br>
-                    字形又分两种：大字形（亚洲文字）和小字形（西方文字）。<br>
-                    符号形：指特色符号、图形或定义线型中图形。</p>
-
-
-
-                  <div class="post-button text-center">
-                    <a class="btn" href="/post/qubie/" rel="contents">
-                      阅读全文 »
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-
-
-            <div class="page bg-color">
-              <ul class="pagination-ul">
-
-
-
-                <li class="pagination-li pagination-active">
-                  <a href="/page/../">
-                    1
-                  </a>
-                </li>
-
-                <li class="pagination-li ">
-                  <a href="/page/2">
-                    2
-                  </a>
-                </li>
-
-                <li class="pagination-li ">
-                  <a href="/page/3">
-                    3
-                  </a>
-                </li>
-
-                <li class="pagination-li ">
-                  <a href="/page/4">
-                    4
-                  </a>
-                </li>
-
-
-
-                <li class="pagination-dir">
-                  <a href="/page/2">
-                    <i class="fa fa-angle-right"></i>
-                  </a>
-                </li>
-
-              </ul>
             </div>
-          </section>
+            <div class="post-footer">
+              <ul class="post-copyright">
+                <li class="post-copyright-author">
+                  <strong>本文作者：</strong>
+                  李薛健
+                </li>
+                <li class="post-copyright-link">
+                  <strong>本文链接：</strong>
+                  <a href="/post/7GDP70IHC/" title="13个建筑设计中常用的剖面设计手法">/post/7GDP70IHC/</a>
+                </li>
+                <li class="post-copyright-license">
+                  <strong>版权声明： </strong>
+                  本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener"
+                    target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+                </li>
+              </ul>
+              <div class="tags">
+
+              </div>
+              <div class="nav">
+                <div class="nav-prev">
+
+                </div>
+                <div class="nav-next">
+
+                  <a class="nav-pc-next" title="10个建筑设计中常用的屋顶设计手法" href="/post/3eT2ceCcO/">10个建筑设计中常用的屋顶设计手法</a>
+                  <a class="nav-mobile-next" title="10个建筑设计中常用的屋顶设计手法" href="/post/3eT2ceCcO/">下一篇</a>
+                  <i class="fa fa-chevron-right"></i>
+
+                </div>
+              </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/valine@1.4.4/dist/Valine.min.js"></script>
+            <div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
+
+            <style>
+              .v .veditor {
+                min-height: 10rem;
+                background-image: url('https://www.easyicon.net/api/resizeApi.php?id=1239495&amp;size=128');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: right;
+                background-color: rgba(255, 255, 255, 0);
+                resize: none;
+              }
+
+              .v .vwrap {
+                border: 1px solid #000 !important;
+              }
+
+              .v .vbtn {
+                padding: .4rem 1.2rem !important;
+                border-color: #fff !important;
+                background-color: #49b1f5 !important;
+                color: #fff !important;
+                font-size: .7rem !important;
+              }
+
+              .v .vcards .vcard .vh .vmeta .vat {
+                padding: 0 .8rem !important;
+                border: 1px solid #00c4b6 !important;
+                border-radius: 5px !important;
+                color: #00c4b6 !important;
+              }
+            </style>
+            <script>
+              new Valine({
+                el: '#vcomments',
+                appId: 'FEsIjAGYwt0s91ih36axJN0V-gzGzoHsz',
+                appKey: 'Ug8QtB6rTLaPRRg2GS84TtIW',
+                avatar: 'robohash',
+                placeholder: '这里可以评论哦！',
+                pageSize: '',
+                lang: 'zh-cn',
+                visitor: 'true' === 'true',
+                highlight: 'true' === 'true',
+                avatarForce: 'true' === 'true',
+              });
+            </script>
+
+          </div>
         </div>
       </div>
     </div>
@@ -4016,6 +3451,5 @@ https://www.lanzous.com/i778f3a   密码:87q1&lt;/p&gt;
 
 
 <script src=" /media/js/cool.js"></script>
-
 
 </html>
