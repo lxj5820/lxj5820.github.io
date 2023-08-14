@@ -11299,23 +11299,23 @@
                                             })]
                                         }), (0, R.jsxs)("div", {
                                             className: "userCell borderBottomNone flex-app userCell2 mt10",
-                                            onClick: function () {
-                                                F({
-                                                    addClass: "payDialog",
-                                                    content: (0, R.jsxs)("div", {
-                                                        children: [(0, R.jsx)("img", {
-                                                            src: t(7621)
-                                                        }), (0, R.jsx)("p", {
-                                                            children: "为了更持久性使用此工具，打赏将用于本站域名和服务器续费"
-                                                        })]
-                                                    }),
-                                                    button: {
-                                                        "关闭": function (A) {
-                                                            A.close()
+                                                onClick: function () {
+                                                    F({
+                                                        addClass: "payDialog",
+                                                        content: (0, R.jsxs)("div", {
+                                                            children: [(0, R.jsx)("img", {
+                                                                src: t(7621)
+                                                            }), (0, R.jsx)("p", {
+                                                                children: "为了更持久性使用此工具，打赏将用于本站域名和服务器续费"
+                                                            })]
+                                                        }),
+                                                        button: {
+                                                            "关闭": function (A) {
+                                                                A.close()
+                                                            }
                                                         }
-                                                    }
-                                                })
-                                            },
+                                                    })
+                                                },
                                             children: [(0, R.jsx)("div", {
                                                 className: "icon_bg icon_s2 icon_14"
                                             }), (0, R.jsxs)("p", {
