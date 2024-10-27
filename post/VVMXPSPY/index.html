@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品列表</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      margin-bottom: 2rem;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product-details {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .product-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .product-description {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .product-price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+    }
+
+    .cta-button {
+      background: #1a1a1a;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 0.3rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-top: auto;
+    }
+
+    .cta-button:hover {
+      background: #2d2d2d;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">模型世界</a>
+      <ul class="flex space-x-8">
+        <li><a href="index.html" class="text-gray-700 hover:text-indigo-600">首页</a></li>
+        <li><a href="products.html" class="text-gray-700 hover:text-indigo-600">产品</a></li>
+        <li><a href="about.html" class="text-gray-700 hover:text-indigo-600">关于我们</a></li>
+        <li><a href="contact.html" class="text-gray-700 hover:text-indigo-600">联系我们</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container mx-auto py-16">
+    <h1 class="text-3xl font-bold text-center mb-16">所有产品</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="product-card">
+        <a href="product1.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+1" alt="Model 1" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 1</h2>
+          <p class="product-description">这是一款非常精致的模型，适合所有模型爱好者。模型采用高品质材料制作，细节处理非常精细，可以作为收藏品或展示品。</p>
+          <p class="product-price">￥199.99</p>
+          <a href="product1.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product2.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+2" alt="Model 2" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 2</h2>
+          <p class="product-description">这是一款非常适合初学者的模型。模型采用高品质材料制作，组装过程简单，适合入门级爱好者。</p>
+          <p class="product-price">￥299.99</p>
+          <a href="product2.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product3.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+3" alt="Model 3" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 3</h2>
+          <p class="product-description">这是一款非常高端的模型，适合资深模型爱好者。模型采用贵金属材料制作，细节处理非常精细，适合收藏和展示。</p>
+          <p class="product-price">￥499.99</p>
+          <a href="product3.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product4.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+4" alt="Model 4" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 4</h2>
+          <p class="product-description">这是一款经典的模型，适合所有模型爱好者。模型采用高品质材料制作，细节处理精细。</p>
+          <p class="product-price">￥199.99</p>
+          <a href="product4.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product5.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+5" alt="Model 5" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 5</h2>
+          <p class="product-description">这是一款适合初学者的模型，组装简单，品质优良。</p>
+          <p class="product-price">￥299.99</p>
+          <a href="product5.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product6.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+6" alt="Model 6" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 6</h2>
+          <p class="product-description">这是一款高端的模型，适合资深模型爱好者，细节处理非常精细。</p>
+          <p class="product-price">￥499.99</p>
+          <a href="product6.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product7.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+7" alt="Model 7" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 7</h2>
+          <p class="product-description">这是一款精致的模型，适合所有爱好者。细节处理非常精细。</p>
+          <p class="product-price">￥199.99</p>
+          <a href="product7.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product8.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+8" alt="Model 8" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 8</h2>
+          <p class="product-description">这是一款适合初学者的模型，组装简单，适合入门级爱好者。</p>
+          <p class="product-price">￥299.99</p>
+          <a href="product8.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <a href="product9.html">
+          <img src="https://via.placeholder.com/400x300?text=Model+9" alt="Model 9" class="product-image">
+        </a>
+        <div class="product-details">
+          <h2 class="product-name">模型 9</h2>
+          <p class="product-description">这是一款高端的模型，适合资深模型爱好者，细节处理非常精细。</p>
+          <p class="product-price">￥499.99</p>
+          <a href="product9.html" class="cta-button">查看详情</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>版权所有 © 2024 VVMXP. 保留所有权利。</p>
+    </div>
+  </footer>
+</body>
+
+</html>
